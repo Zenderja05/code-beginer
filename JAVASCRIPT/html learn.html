@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML LEARN</title>
+</head>
+<body>
+    <h1>HTML เบื้องต้น</h1>
+    <p>
+        HTML (HyperText Markup Language) คือ ภาษามาร์กอัปที่ใช้ในการสร้างและจัดโครงสร้างเนื้อหาบนเว็บเพจ
+        HTML ประกอบด้วยแท็กต่างๆ ที่ใช้ในการกำหนดรูปแบบและการแสดงผลของเนื้อหา เช่น ข้อความ รูปภาพ ลิงก์ ตาราง และอื่นๆ
+        HTML เป็นภาษาที่ง่ายต่อการเรียนรู้และใช้งาน ทำให้ผู้เริ่มต้นสามารถสร้างเว็บเพจได้อย่างรวดเร็ว
+    </p>
+    <h1>HTML5</h1>
+    <p>
+        HTML5 เป็นเวอร์ชันล่าสุดของ HTML ที่มีการเพิ่มฟีเจอร์และความสามารถใหม่ๆ เพื่อรองรับการพัฒนาเว็บแอปพลิเคชันที่ทันสมัย
+        HTML5 มีการสนับสนุนการเล่นวิดีโอและเสียงโดยไม่ต้องใช้ปลั๊กอิน การสร้างกราฟิกด้วยแท็ก <code>&lt;canvas&gt;</code> และการจัดการข้อมูลด้วยแท็ก <code>&lt;data&gt;</code> เป็นต้น
+        HTML5 ยังเน้นการใช้งานร่วมกับ CSS3 และ JavaScript เพื่อสร้างประสบการณ์ผู้ใช้ที่ดีขึ้น
+    </p>
+    <h1>meta tack</h1>
+    <ul>
+        <li>&lt;meta name="keywords" content=""&gt; ใช้ระบุคำสำคัญที่เกี่ยวข้องกับเนื้อหาของเว็บเพจ เพื่อช่วยในการค้นหา</li>
+        <li>&lt;meta name="description" content=""&gt; ใช้ระบุคำอธิบายสั้นๆ เกี่ยวกับเนื้อหาของเว็บเพจ ซึ่งจะแสดงในผลการค้นหาของเครื่องมือค้นหา</li>
+        <li>&lt;meta name="author" content=""&gt; ใช้ระบุชื่อผู้เขียนหรือผู้สร้างเว็บเพจ</li>
+        <li>&lt;meta charset="UTF-8"&gt; ใช้กำหนดการเข้ารหัสตัวอักษรของเว็บเพจเป็น UTF-8 ซึ่งรองรับตัวอักษรหลากหลายภาษา</li>
+    </ul>
+    <h1>แท็ก h1-h6 </h1>
+    <ul>
+        <li><h1>h1</h1></li>
+        <li><h2>h2</h2></li>
+        <li><h3>h3</h3></li>
+        <li><h4>h4</h4></li>
+        <li><h5>h5</h5></li>
+        <li><h6>h6</h6></li>
+    </ul>
+    <h1>แท็ก p</h1>
+    <p>แท็ก &lt;p&gt; ใช้สำหรับสร้างย่อหน้าของข้อความใน HTML โดยจะมีการเว้นวรรคก่อนและหลังย่อหน้าเพื่อความชัดเจน</p>
+    <h1>แท็ก a</h1>
+    <p>แท็ก &lt;a&gt; ใช้สำหรับสร้างลิงก์ไปยังหน้าเว็บอื่นหรือส่วนต่างๆ ภายในหน้าเดียวกัน โดยใช้แอตทริบิวต์ href เพื่อระบุ URL ของลิงก์</p>
+    <h1>แท็ก img</h1>
+    <p>แท็ก &lt;img&gt; ใช้สำหรับแทรกรูปภาพในเว็บเพจ โดยใช้แอตทริบิวต์ src เพื่อระบุที่อยู่ของรูปภาพ และ alt เพื่อระบุข้อความสำรองในกรณีที่รูปภาพไม่สามารถโหลดได้</p>
+    <h1>แท็ก div</h1>
+    <p>แท็ก &lt;div&gt; ใช้สำหรับสร้างกลุ่มขององค์ประกอบ HTML เพื่อจัดการรูปแบบและการจัดวางในหน้าเว็บ โดยมักใช้ร่วมกับ CSS เพื่อกำหนดสไตล์</p>
+    <h1>แท็ก span</h1>
+    <p>แท็ก &lt;span&gt; ใช้สำหรับกำหนดส่วนของข้อความหรือองค์ประกอบภายในบรรทัดเดียวกัน โดยมักใช้ร่วมกับ CSS เพื่อกำหนดสไตล์เฉพาะส่วน</p>
+    <h1>การเขียนคอมเมนท์</h1>
+    <ul>
+        <p>ใช้เขียนสำหรับอะิบายโค้ดและจะไม่แสดงบนหน้าเอาท์พุด</p>
+        <li>&lt;!--ข้อความ--&gt;</li>
+        <li>kw:ctrl,/</li>
+    </ul>
+    <h1>แท็กที่ใช้ร่วมกับ p </h1>
+    <ul>
+        <li>&lt;strong&gt; ใช้เน้นข้อความให้เด่นชัดขึ้น โดยมักจะแสดงเป็นตัวหนา</li>
+        <li>&lt;em&gt; ใช้เน้นข้อความโดยการทำให้ข้อความเอียง เพื่อแสดงความสำคัญหรือเน้นเสียง</li>
+        <li>&lt;br&gt; ใช้สำหรับขึ้นบรรทัดใหม่ภายในย่อหน้า โดยไม่ต้องเริ่มย่อหน้าใหม่</li>
+        <li>&lt;mark&gt; ใช้เน้นข้อความโดยการทำให้ข้อความมีพื้นหลังสีเหลือง เพื่อดึงดูดความสนใจ</li>
+        <li>&lt;del&gt; ใช้แสดงข้อความที่ถูกลบออก โดยมักจะแสดงเป็นข้อความที่มีเส้นขีดผ่านกลาง</li>
+        <li>&lt;ins&gt; ใช้แสดงข้อความที่ถูกเพิ่มเข้ามาใหม่ โดยมักจะแสดงเป็นข้อความที่มีเส้นใต้</li>
+        <li>&lt;sub&gt; ใช้สำหรับแสดงข้อความในรูปแบบตัวห้อย เช่น สูตรทางวิทยาศาสตร์หรือคณิตศาสตร์</li>
+        <li>&lt;sup&gt; ใช้สำหรับแสดงข้อความในรูปแบบตัวบน เช่น เลขชี้กำลังหรือหมายเลขบรรทัด</li>
+        <li>&lt;code&gt; ใช้สำหรับแสดงข้อความที่เป็นโค้ดโปรแกรม โดยมักจะแสดงในรูปแบบตัวอักษรที่แตกต่างจากข้อความปกติ</li>
+        <li>&lt;blockquote&gt; ใช้สำหรับแสดงข้อความที่เป็นการอ้างอิงหรือคำพูดจากแหล่งอื่น โดยมักจะแสดงในรูปแบบที่มีการเยื้องซ้าย</li>
+        <li>&lt;q&gt; ใช้สำหรับแสดงข้อความที่เป็นคำพูดสั้นๆ ภายในย่อหน้า โดยมักจะแสดงในรูปแบบที่มีเครื่องหมายคำพูด</li>
+        <li>&lt;abbr&gt; ใช้สำหรับแสดงคำย่อ โดยมักจะแสดงในรูปแบบที่มีเส้นใต้และมีคำอธิบายเมื่อเลื่อนเมาส์ไปเหนือคำย่อ</li>
+        <li>&lt;cite&gt; ใช้สำหรับแสดงชื่อของงานเขียน งานวิจัย หรือแหล่งข้อมูล โดยมักจะแสดงในรูปแบบที่มีการเอียง</li>
+        <li>&lt;dfn&gt; ใช้สำหรับกำหนดคำหรือวลีที่มีความหมายเฉพาะเจาะจงในบริบทของข้อความ โดยมักจะแสดงในรูปแบบที่มีการเน้น</li>
+        <li>&lt;time&gt; ใช้สำหรับแสดงวันที่และเวลาที่เกี่ยวข้องกับข้อความ โดยสามารถระบุรูปแบบวันที่และเวลาได้</li>
+        <li>&lt;var&gt; ใช้สำหรับแสดงตัวแปรในข้อความที่เกี่ยวข้องกับคณิตศาสตร์หรือวิทยาศาสตร์ โดยมักจะแสดงในรูปแบบที่มีการเอียง</li>
+        <li>&lt;s&gt; ใช้สำหรับแสดงข้อความที่ไม่ถูกต้องหรือไม่เป็นที่ยอมรับ โดยมักจะแสดงเป็นข้อความที่มีเส้นขีดผ่านกลาง</li>
+        <li>&lt;u&gt; ใช้สำหรับเน้นข้อความโดยการทำให้ข้อความมีเส้นใต้ เพื่อแสดงความสำคัญหรือเน้นเสียง</li>
+        <li>&lt;i&gt; ทำให้ข้อความเป็นตัวเอียง</li>
+    </ul>
+    <p>&lt;br/&gt; ขึ้นบรรทัดใหม่</p>
+    <p>&lt;hr&gt; สร้างเส้นคั่น</p>
+    <h1>การสร้างลิงก์</h1>
+    <p>การสร้างลิงก์ใน HTML ใช้แท็ก &lt;a&gt; โดยมีแอตทริบิวต์ href เพื่อระบุที่อยู่ของลิงก์ เช่น</p>
+    <p>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt; ลิงก์อยู่ในแท็บเดิม</p>
+    <a href="http://www.google.com">google</a>
+    <p>&lt;a href="https://www.google.com" target=_blank&gt;Google&lt;/a&gt; ลิงก์ไปอีกแท็บนึง</p>
+    <a href="http://www.google.com"target=_blank>google</a>
+    <h1>การแทรกรูปภาพ</h1>
+    <p>การแทรกรูปภาพใน HTML ใช้แท็ก &lt;img&gt; โดยมีแอตทริบิวต์</p>
+    <ul>
+        <li>src เพื่อระบุที่อยู่ของรูปภาพ</li>
+        <li>alt เพื่อระบุข้อความสำรองในกรณีที่รูปภาพไม่สามารถโหลดได้</li>
+        <li>width เพื่อระบุความกว้างของรูปภาพ</li>
+        <li>height เพื่อระบุความสูงของรูปภาพ</li>
+    </ul>
+    <p>และจะมีอยู่ 3 รูปแบบคือ</p>
+    <ul>
+        <li>external  รูปภาพจากภายนอก</li>
+        <li>internal รูปภาพจากในเครื่อง</li>
+        <li>รูปภาพสามาถลิ้งก์ไปแท็บอื่นได้</li>
+    </ul>
+    <h3>external</h3>
+    <p>&lt;img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="500" height="333"&gt;</p>
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="500" height="333">
+    <h3>internal</h3>
+    <p>&lt;img src="autumn-950897_1280.jpg" alt="" width="500" height="333"&gt;</p>
+    <img src="autumn-950897_1280.jpg" alt="" width="500" height="333">
+    <h3>รูปภาพสามาถลิ้งก์ไปแท็บอื่นได้</h3>
+    <p>&lt;a href="css learn.html"&gt;&lt;img src="OIP.webp" alt="css" width="300" height="280"&gt;&lt;/a&gt;</p>
+    <a href="css learn.html">
+        <img src="OIP.webp" alt="css" width="300" height="280">
+    </a>
+    <h1>การแสดงรายการ(list)</h1>
+    <p>การแสดงรายการใน HTML มีอยู่ 4 ประเภท คือ</p>
+    <ul>
+        <li>รายการที่ไม่มีลำดับ (Unordered List)</li>
+        <li>รายการที่มีลำดับ (Ordered List)</li>
+        <li>รายการคำอธิบาย (Description List)</li>
+        <li>การซ้อนรายการ (Nested List)</li>
+    </ul>
+    <h3>รายการที่ไม่มีลำดับ (Unordered List)</h3>
+    <p>ใช้แท็ก &lt;ul&gt; สำหรับสร้างรายการที่ไม่มีลำดับ โดยใช้แท็ก &lt;li&gt; สำหรับแต่ละรายการ เช่น</p>
+    <p>&lt;ul&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;รายการที่ 1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;รายการที่ 2&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;รายการที่ 3&lt;/li&gt;<br>
+        &lt;/ul&gt;
+    </p>
+    <ul>
+        <li>รายการที่ 1</li>
+        <li>รายการที่ 2</li>
+        <li>รายการที่ 3</li>
+    </ul>
+    <h3>type ของ Unordered List จะมีอยู่ 3 type</h3>
+    <ul type="disc">
+        <li>disc</li>
+        <li>disc</li>
+        <li>disc</li>
+    </ul>
+    <ul type="circle">
+        <li>circle</li>
+        <li>circle</li>
+        <li>circle</li>
+    </ul>
+    <ul type="square">
+        <li>square</li>
+        <li>square</li>
+        <li>square</li>
+    </ul>
+    <h3>รายการที่มีลำดับ (Ordered List)</h3>
+    <p>ใช้แท็ก &lt;ol&gt; สำหรับสร้างรายการที่มีลำดับ โดยใช้แท็ก &lt;li&gt; สำหรับแต่ละรายการ เช่น</p>
+    <p>&lt;ol&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;รายการที่ 1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;รายการที่ 2&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;รายการที่ 3&lt;/li&gt;<br>
+        &lt;/ol&gt;
+    </p>
+    <ol>
+        <li>รายการที่ 1</li>
+        <li>รายการที่ 2</li>
+        <li>รายการที่ 3</li>
+    </ol>
+    <h3>type ของ Ordered List จะมีอยู่ 4 type</h3>
+    <ol type="1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <ol type="A">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ol>
+    <ol type="a">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ol>
+    <ol type="I">
+        <li>I</li>
+        <li>II</li>
+        <li>III</li>
+    </ol>
+    <ol type="i">
+        <li>i</li>
+        <li>ii</li>
+        <li>iii</li>
+    </ol>
+    <h3>รายการคำอธิบาย (Description List)</h3>
+    <p>ใช้แท็ก &lt;dl&gt; สำหรับสร้างรายการคำอธิบาย โดยใช้แท็ก &lt;dt&gt; สำหรับหัวข้อคำอธิบาย และแท็ก &lt;dd&gt; สำหรับรายละเอียดคำอธิบาย เช่น</p>
+    <p>&lt;dl&gt;<br>
+        &nbsp;&nbsp;&lt;dt&gt;หัวข้อที่ 1&lt;/dt&gt;<br>
+        &nbsp;&nbsp;&lt;dd&gt;รายละเอียดของหัวข้อที่ 1&lt;/dd&gt;<br>
+        &nbsp;&nbsp;&lt;dt&gt;หัวข้อที่ 2&lt;/dt&gt;<br>
+        &nbsp;&nbsp;&lt;dd&gt;รายละเอียดของหัวข้อที่ 2&lt;/dd&gt;<br>
+        &lt;/dl&gt;
+    </p>
+    <dl>
+        <dt>หัวข้อที่ 1</dt>
+        <dd>รายละเอียดของหัวข้อที่ 1</dd>
+        <dt>หัวข้อที่ 2</dt>
+        <dd>รายละเอียดของหัวข้อที่ 2</dd>
+    </dl>
+    <h3>การกำหนดจุดเริ่มต้นของ Ordered List</h3>
+    <p>สามารถกำหนดจุดเริ่มต้นของ Ordered List ได้โดยใช้แอตทริบิวต์ start เช่น</p>
+    <p>&lt;ol start="5"&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;รายการที่ 5&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;รายการที่ 6&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;รายการที่ 7&lt;/li&gt;<br>
+        &lt;/ol&gt;
+    </p>
+    <ol start="5">
+        <li>รายการที่ 5</li>
+        <li>รายการที่ 6</li>
+        <li>รายการที่ 7</li>
+    </ol>
+    <h2>การซ้อนรายการ (Nested List)</h2>
+    <p>สามารถซ้อนรายการภายในรายการได้โดยการสร้างแท็ก &lt;ul&gt; หรือ &lt;ol&gt; ภายในแท็ก &lt;li&gt; เช่น</p>
+    <p>&lt;ul&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;รายการที่ 1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;รายการที่ 2<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;รายการที่ 2.1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;รายการที่ 2.2&lt;/li&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;<br>
+        &nbsp;&nbsp;&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;รายการที่ 3&lt;/li&gt;<br>
+        &lt;/ul&gt;
+    </p>
+    <ul>
+        <li>รายการที่ 1</li>
+        <li>รายการที่ 2
+            <ul>
+                <li>รายการที่ 2.1</li>
+                <li>รายการที่ 2.2</li>
+            </ul>
+        </li>
+        <li>รายการที่ 3</li>
+    </ul>
+    <h1>การสร้างตาราง (Table)</h1>
+    <p>การสร้างตารางใน HTML ใช้แท็ก &lt;table&gt; โดยมีแท็กย่อยต่างๆ เพื่อกำหนดส่วนต่างๆ ของตาราง เช่น</p>
+    <ul>
+        <li>&lt;tr&gt; ใช้สำหรับสร้างแถวของตาราง (table row)</li>
+        <li>&lt;th&gt; ใช้สำหรับสร้างเซลล์หัวข้อของตาราง (table header)</li>
+        <li>&lt;td&gt; ใช้สำหรับสร้างเซลล์ข้อมูลของตาราง (table data)</li>
+        <li>&lt;caption&gt; ใช้สำหรับสร้างคำอธิบายของตาราง (table caption)</li>
+        <li>&lt;thead&gt; ใช้สำหรับสร้างส่วนหัวของตาราง (table head)</li>
+        <li>&lt;tbody&gt; ใช้สำหรับสร้างส่วนเนื้อหาของตาราง (table body)</li>
+        <li>&lt;tfoot&gt; ใช้สำหรับสร้างส่วนท้ายของตาราง (table footer)</li>
+    </ul>
+    <h3>ตัวอย่างการสร้างตาราง</h3>
+    <p>&lt;table border="1"&gt;<br>
+        &nbsp;&nbsp;&lt;caption&gt;ตารางตัวอย่าง&lt;/caption&gt;<br>
+        &nbsp;&nbsp;&lt;thead&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;หัวข้อที่ 1&lt;/th&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;หัวข้อที่ 2&lt;/th&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+        &nbsp;&nbsp;&lt;/thead&gt;<br>
+        &nbsp;&nbsp;&lt;tbody&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;ข้อมูลที่ 1&lt;/td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;ข้อมูลที่ 2&lt;/td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+        &nbsp;&nbsp;&lt;/tbody&gt;<br>
+        &lt;/table&gt;
+    </p>
+    <table border="1">
+        <caption>ตารางตัวอย่าง</caption>
+        <thead>
+            <tr>
+                <th>หัวข้อที่ 1</th>
+                <th>หัวข้อที่ 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ข้อมูลที่ 1</td>
+                <td>ข้อมูลที่ 2</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>attriburte ของตาราง </h3>
+    <ul>
+        <li>border กำหนดขอบของตาราง</li>
+        <li>cellpadding กำหนดระยะห่างระหว่างขอบเซลล์กับเนื้อหาภายในเซลล์</li>
+        <li>cellspacing กำหนดระยะห่างระหว่างเซลล์ในตาราง</li>
+        <li>width กำหนดความกว้างของตาราง</li>
+        <li>height กำหนดความสูงของตาราง</li>
+        <li>align กำหนดการจัดตำแหน่งของตาราง (เช่น left, center, right)</li>
+        <li>bgcolor กำหนดสีพื้นหลังของตาราง</li>
+        <li>colspan กำหนดจำนวนคอลัมน์ที่เซลล์ควรครอบคลุม</li>
+        <li>rowspan กำหนดจำนวนแถวที่เซลล์ควรครอบคลุม</li>
+        <li>callpadding แสดงข้อมูลในเซลล์ให้ชิดขอบเซลล์มากขึ้น</li>
+        <li>callspacing แสดงข้อมูลในเซลล์ให้ห่างจากขอบเซลล์มากขึ้น</li>
+    </ul>
+<h1>div,spen</h1>
+<p>แท็ก &lt;div&gt; ใช้สำหรับสร้างกลุ่มขององค์ประกอบ HTML เพื่อจัดการรูปแบบและการจัดวางในหน้าเว็บ โดยมักใช้ร่วมกับ CSS เพื่อกำหนดสไตล์</p>
+<p>แท็ก &lt;span&gt; ใช้สำหรับกำหนดส่วนของข้อความหรือองค์ประกอบภายในบรรทัดเดียวกัน โดยมักใช้ร่วมกับ CSS เพื่อกำหนดสไตล์เฉพาะส่วน</p>
+<p>ตัวอย่างการใช้ div</p>
+<div style="width:300px; height:100px; background-color:blue; color:white; text-align:center; line-height:100px;">
+    This is a div element
+</div>
+<p>ตัวอย่างการใช้ span</p>
+<p>This is a <span style="color:red; font-weight:bold;">span</span> element</p>
+<h1>การสร้างฟรอม (form)</h1>
+<p>การสร้างฟอร์มใน HTML ใช้แท็ก &lt;form&gt; โดยมีแอตทริบิวต์ต่างๆ เพื่อกำหนดลักษณะของฟอร์ม เช่น</p>
+<ul>
+    <li>action: กำหนด URL ที่จะส่งข้อมูลฟอร์มไปเมื่อผู้ใช้กดปุ่มส่ง (submit)</li>
+    <li>method: กำหนดวิธีการส่งข้อมูลฟอร์ม เช่น GET หรือ POST</li>
+    <li>enctype: กำหนดรูปแบบการเข้ารหัสข้อมูลฟอร์ม เช่น application/x-www-form-urlencoded หรือ multipart/form-data</li>
+</ul>
+<p>ภายในแท็ก &lt;form&gt; สามารถใช้แท็กต่างๆ เพื่อสร้างฟิลด์สำหรับกรอกข้อมูล เช่น</p>
+<ul>
+    <li>&lt;input&gt;: ใช้สำหรับสร้างฟิลด์ต่างๆ เช่น</li>
+    <ol type="1">
+        <li>text ใส่ข้อความ</li>
+        <li>password ใส่รหัสผ่าน</li>
+        <li>email ใส่อีเมล</li>
+        <li>number ใส่ตัวเลข</li>
+        <li>date ใส่วันที่</li>
+        <li>tel ใส่เบอร์โทร</li>
+        <li>color ใส่สี</li>
+        <li>checkbox เลือกได้หลายตัว</li>
+        <li>radio เลือกได้ตัวเดียว</li>
+        <li>file อัพโหลดไฟล์</li>
+        <li>submit ปุ่มส่งข้อมูล</li>
+        <li>reset ปุ่มรีเซ็ตข้อมูล</li>
+        <li>hidden ฟิลด์ที่ซ่อนอยู่</li>
+        <li>range เลือกค่าจากสไลด์</li>
+        <li>search ช่องค้นหา</li>
+        <li>url ใส่ลิงก์</li>
+        <li>image ปุ่มส่งข้อมูลแบบรูปภาพ</li>
+        <li>datetime-local ใส่วันที่และเวลา</li>
+        <li>month ใส่เดือนและปี</li>
+        <li>time ใส่เวลา</li>
+        <li>week ใส่สัปดาห์และปี</li>
+    </ol>
+    <li>&lt;textarea&gt;: ใช้สำหรับสร้างฟิลด์ข้อความหลายบรรทัด</li>
+    <li>&lt;select&gt;: ใช้สำหรับสร้างเมนูแบบเลื่อนลง (dropdown menu)</li>
+    <li>&lt;button&gt;: ใช้สำหรับสร้างปุ่มที่สามารถกดได้</li>
+</ul>
+<h3>attriburte form</h3>
+<ul>
+    <li>action: กำหนด URL ที่จะส่งข้อมูลฟอร์มไปเมื่อผู้ใช้กดปุ่มส่ง (submit)</li>
+    <li>method: กำหนดวิธีการส่งข้อมูลฟอร์ม เช่น GET หรือ POST</li>
+    <li>enctype: กำหนดรูปแบบการเข้ารหัสข้อมูลฟอร์ม เช่น application/x-www-form-urlencoded หรือ multipart/form-data</li>
+    <li>name: กำหนดชื่อของฟอร์ม</li>
+    <li>target: กำหนดที่ที่จะแสดงผลลัพธ์หลังจากส่งฟอร์ม เช่น _blank, _self, _parent, _top</li>
+    <li>autocomplete: กำหนดว่าฟอร์มควรเปิดใช้งานการเติมข้อความอัตโนมัติหรือไม่ (on หรือ off)</li>
+    <li>novalidate: ใช้เพื่อปิดการตรวจสอบความถูกต้องของฟอร์มเมื่อส่งข้อมูล</li>
+    <li>placeholder ใช้เขียนอธิบายในช่องอินพุด</li>
+    <li>required ใช้บังคับให้กรอกข้อมูลในช่องอินพุด</li>
+    <li>readonly ใช้สำหรับทำให้ช่องอินพุดไม่สามารถแก้ไขได้</li>
+    <li>disabled ใช้สำหรับทำให้ช่องอินพุดไม่สามารถใช้งานได้</li>
+</ul>
+<p>ตัวอย่างการสร้างฟอร์ม</p>
+<p>
+    
+</p>
+<form action="/submit" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label><br><br>
+    <label for="hobbies">Hobbies:</label><br>
+    <input type="checkbox" id="reading" name="hobbies" value="reading">
+    <label for="reading">Reading</label><br>
+    <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+    <label for="traveling">Traveling</label><br>
+    <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+    <label for="gaming">Gaming</label><br><br>
+    <label for="country">Country:</label><br>
+    <select id="country" name="country" required>
+        <option value="">Select your country</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
+    </select><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+<h1>block,inline</h1>
+<p>Block-level elements (บล็อกเลเวล อิลิเมนต์) คือ อิลิเมนต์ที่เริ่มต้นในบรรทัดใหม่และครอบคลุมความกว้างทั้งหมดของพาเรนต์คอนเทนเนอร์ ตัวอย่างของบล็อกเลเวล อิลิเมนต์ ได้แก่</p>
+<ul>
+    <li>&lt;div&gt;</li>
+    <li>&lt;h1&gt; ถึง &lt;h6&gt;</li>
+    <li>&lt;p&gt;</li>
+    <li>&lt;ul&gt; และ &lt;ol&gt;</li>
+    <li>&lt;li&gt;</li>
+    <li>&lt;table&gt;</li>
+</ul>
+<p>Inline elements (อินไลน์ อิลิเมนต์) คือ อิลิเมนต์ที่ไม่เริ่มต้นในบรรทัดใหม่และครอบคลุมเฉพาะเนื้อหาภายในตัวเอง ตัวอย่างของอินไลน์ อิลิเมนต์ ได้แก่</p>
+<ul>
+    <li>&lt;a&gt;</li>
+    <li>&lt;span&gt;</li>
+    <li>&lt;img&gt;</li>
+    <li>&lt;strong&gt;</li>
+    <li>&lt;em&gt;</li>
+    <li>&lt;code&gt;</li>
+</ul>
+<h1>id,class</h1>
+<p>id และ class เป็นแอตทริบิวต์ที่ใช้ในการระบุและจัดกลุ่มองค์ประกอบ HTML เพื่อให้สามารถนำไปใช้กับ CSS และ JavaScript ได้อย่างมีประสิทธิภาพ</p>
+<ul>
+    <li>id: ใช้ระบุองค์ประกอบ HTML ที่เฉพาะเจาะจง โดย id ควรมีค่าเป็นเอกลักษณ์ (unique) ภายในหน้าเว็บเดียวกัน สามารถใช้ id เพื่อกำหนดสไตล์หรือเข้าถึงองค์ประกอบผ่าน JavaScript ได้ เช่น &lt;div id="header"&gt;... (#)</li>
+    <li>class: ใช้จัดกลุ่มองค์ประกอบ HTML ที่มีลักษณะหรือบทบาทคล้ายกัน โดย class สามารถมีค่าเดียวกันได้ในหลายองค์ประกอบภายในหน้าเว็บเดียวกัน สามารถใช้ class เพื่อกำหนดสไตล์หรือเข้าถึงกลุ่มองค์ประกอบผ่าน JavaScript ได้ เช่น &lt;div class="container"&gt;...(.)</li>
+</ul>
+<h1>semantic tag</h1>
+<p>Semantic tags (แท็กเชิงความหมาย) คือ แท็ก HTML ที่มีความหมายเฉพาะเจาะจงเกี่ยวกับเนื้อหาที่อยู่ภายในแท็กนั้นๆ ซึ่งช่วยให้โครงสร้างของหน้าเว็บมีความชัดเจนและง่ายต่อการเข้าใจ ทั้งสำหรับผู้ใช้และเครื่องมือค้นหา ตัวอย่างของ semantic tags ได้แก่</p>
+<ul>
+    <li>&lt;header&gt;: ใช้สำหรับส่วนหัวของหน้าเว็บหรือส่วนของเนื้อหา</li>
+    <li>&lt;nav&gt;: ใช้สำหรับเมนูนำทางหรือส่วนที่มีลิงก์ไปยังหน้าต่างๆ</li>
+    <li>&lt;main&gt;: ใช้สำหรับเนื้อหาหลักของหน้าเว็บ</li>
+    <li>&lt;article&gt;: ใช้สำหรับเนื้อหาที่เป็นอิสระและสามารถเผยแพร่ได้ เช่น บทความ ข่าว หรือโพสต์ในบล็อก</li>
+    <li>&lt;section&gt;: ใช้สำหรับแบ่งเนื้อหาออกเป็นส่วนๆ ที่มีความสัมพันธ์กัน</li>
+    <li>&lt;aside&gt;: ใช้สำหรับเนื้อหาที่เกี่ยวข้องแต่ไม่ใช่ส่วนหลัก เช่น แถบด้านข้าง หรือข้อมูลเพิ่มเติม</li>
+    <li>&lt;footer&gt;: ใช้สำหรับส่วนท้ายของหน้าเว็บหรือส่วนของเนื้อหา</li>
+    <li>&lt;figure&gt;: ใช้สำหรับกลุ่มของสื่อ เช่น รูปภาพ แผนภูมิ หรือวิดีโอ พร้อมคำอธิบาย</li>
+    <li>&lt;figcaption&gt;: ใช้สำหรับคำอธิบายของแท็ก &lt;figure&gt;</li>
+    <li>&lt;mark&gt;: ใช้สำหรับเน้นข้อความที่สำคัญ</li>
+    <li>&lt;time&gt;: ใช้สำหรับแสดงวันที่และเวลา</li>
+</ul>
+<p>ตัวอย่าง Semantic</p>
+<p>
+    &lt;section&gt;<br>
+    &nbsp;&nbsp;&lt;header&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome to My Website&lt;/h1&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;nav&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+    &nbsp:&nbsp;&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/ul&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/nav&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/header&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;main&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;article&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;h2&gt;About Us&lt;/h2&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;p&gt;We are a web development company specializing in creating modern and responsive websites.&lt;/p&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/article&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;section&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;h2&gt;Our Services&lt;/h2&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  &lt;p&gt;We offer a range of services including web design, development, and SEO optimization.&lt;/p&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/section&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;aside&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  &lt;h3&gt;Latest News&lt;/h3&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  &lt;p&gt;Check out our blog for the latest updates and tips on web development.&lt;/p&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/aside&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/main&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;footer&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  &lt;p&gt;&amp;copy; 2024 My Website. All rights reserved.&lt;/p&gt;<br>
+    &nbsp:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/footer&gt;<br>
+</p>
+<section>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>About Us</h2>
+            <p>We are a web development company specializing in creating modern and responsive websites.</p>
+        </article>
+        <section>
+            <h2>Our Services</h2>
+            <p>We offer a range of services including web design, development, and SEO optimization.</p>
+        </section>
+        <aside>
+            <h3>Latest News</h3>
+            <p>Check out our blog for the latest updates and tips on web development.</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+<h1>HTML Entity</h1>
+<p>HTML Entity (เอนทิตี HTML) คือ รหัสพิเศษที่ใช้แทนตัวอักษรหรือสัญลักษณ์ที่มีความหมายพิเศษใน HTML เพื่อป้องกันไม่ให้เบราว์เซอร์ตีความผิด ตัวอย่างเช่น การใช้ &amp; แทนเครื่องหมาย &lt; หรือ &gt; แทนเครื่องหมาย > เป็นต้น</p>
+<p>ตัวอย่าง HTML Entity ที่ใช้บ่อย:</p>
+<ul>
+    <li>&amp;nbsp; : ช่องว่าง (non-breaking space)</li>
+    <li>&amp;lt; : เครื่องหมาย &lt; (less than)</li>
+    <li>&amp;gt; : เครื่องหมาย &gt; (greater than)</li>
+    <li>&amp;amp; : เครื่องหมาย &amp; (ampersand)</li>
+    <li>&amp;quot; : เครื่องหมาย " (double quote)</li>
+    <li>&amp;apos; : เครื่องหมาย ' (single quote)</li>
+    <li>&amp;copy; : สัญลักษณ์ลิขสิทธิ์ (©)</li>
+    <li>&amp;reg; : สัญลักษณ์เครื่องหมายการค้า (®)</li>
+    <li>&amp;euro; : สัญลักษณ์ยูโร (€)</li>
+    <li>&amp;pound; : สัญลักษณ์ปอนด์ (£)</li>
+    <li>&amp;yen; : สัญลักษณ์เยน (¥)</li>
+    <li>&amp;cent; : สัญลักษณ์เซ็นต์ (¢)</li>
+    <li>&amp;sect; : สัญลักษณ์มาตรา (§)</li>
+    <li>&amp;para; : สัญลักษณ์ย่อหน้าหรือพารากราฟ (¶)</li>
+    <li>&amp;bull; : สัญลักษณ์หัวข้อย่อย (•)</li>
+    <li>&amp;hellip; : สัญลักษณ์จุดไข่ปลา (…) </li>
+    <li>&amp;mdash; : สัญลักษณ์ขีดยาว (—)</li>
+    <li>&amp;ndash; : สัญลักษณ์ขีดกลาง (–)</li>
+    <li>&amp;trade; : สัญลักษณ์เครื่องหมายการค้า (™)</li>
+</ul>
+<h1>การเล่นวิดีโอ</h1>
+<p>การเล่นวิดีโอใน HTML ใช้แท็ก &lt;video&gt; โดยมีแอตทริบิวต์ต่างๆ เพื่อกำหนดลักษณะของวิดีโอ เช่น</p>
+<ul>
+    <li>src: กำหนดที่อยู่ของไฟล์วิดีโอ</li>
+    <li>controls: แสดงแถบควบคุมวิดีโอ เช่น ปุ่มเล่น หยุด และปรับเสียง</li>
+    <li>autoplay: เล่นวิดีโอโดยอัตโนมัติเมื่อโหลดหน้าเว็บ</li>
+    <li>loop: เล่นวิดีโอซ้ำเมื่อจบ</li>
+    <li>muted: ปิดเสียงวิดีโอเริ่มต้น</li>
+    <li>width: กำหนดความกว้างของวิดีโอ</li>
+    <li>height: กำหนดความสูงของวิดีโอ</li>
+</ul>
+<p>ตัวอย่างการเล่นวิดีโอในเครื่อง</p>
+<p>
+    &lt;video controls width="150" height="300"&gt;<br>
+    &nbsp;&nbsp;&lt;source src="Download.mp4" type="video/mp4"&gt;<br>
+    &lt;/video&gt;
+</p>
+<video controls width="150" height="300" >
+    <source src="Download.mp4" type="video/mp4">
+</video>
+<p>ตัวอย่างการเล่นวิดีโอจากภายนอก</p>
+<p>
+    &lt;iframe src="https://www.youtube.com/embed/fryUQBFjNVo?si=tLsRv_TN8t3JfyVr" frameborder="0"&gt;&lt;/iframe&gt;
+</p>
+<iframe src="https://www.youtube.com/embed/fryUQBFjNVo?si=tLsRv_TN8t3JfyVr" frameborder="0"></iframe>
+<h1>การเล่นเสียง (audio)</h1>
+<p>การเล่นเสียงใน HTML ใช้แท็ก &lt;audio&gt; โดยมีแอตทริบิวต์ต่างๆ เพื่อกำหนดลักษณะของเสียง เช่น</p>
+<ul>
+    <li>src: กำหนดที่อยู่ของไฟล์เสียง</li>
+    <li>controls: แสดงแถบควบคุมเสียง เช่น ปุ่มเล่น หยุด และปรับเสียง</li>
+    <li>autoplay: เล่นเสียงโดยอัตโนมัติเมื่อโหลดหน้าเว็บ</li>
+    <li>loop: เล่นเสียงซ้ำเมื่อจบ</li>
+    <li>muted: ปิดเสียงเริ่มต้น</li>
+    <li>volume: กำหนดระดับเสียงเริ่มต้น (ค่าระหว่าง 0.0 ถึง 1.0)</li>
+</ul>
+<p>ตัวอย่างการเล่นเสียง</p>
+<p>
+    &lt;audio controls&gt;<br>
+    &nbsp;&nbsp;&lt;source src="LIELIFE ： เกลียดตัวเอง ( Hate myself ).mp3" type="audio/mpeg"&gt;<br>
+    &lt;/audio&gt;
+</p>
+<audio controls>
+    <source src="LIELIFE ： เกลียดตัวเอง ( Hate myself ).mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
