@@ -1,11 +1,348 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>คู่มือสอน CSS Attributes ครบทุกคำสั่ง</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: #f5f5f5;
+            color: #222;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #0077ff;
+            border-bottom: 2px solid #0077ff;
+            padding-bottom: 5px;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+        .example {
+            border: 1px dashed #aaa;
+            padding: 10px;
+            margin-top: 10px;
+            background: #fafafa;
+        }
+
+        code {
+            background: #eaeaea;
+            padding: 2px 6px;
+            border-radius: 5px;
+        }
+
+        /* ---------- ตัวอย่าง CSS แต่ละหมวด ---------- */
+
+        /* TEXT */
+        .text-demo {
+            color: crimson;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+            text-align: center;
+        }
+
+        /* COLOR & BACKGROUND */
+        .bg-demo {
+            color: white;
+            background-color: teal;
+            background-image: linear-gradient(90deg, teal, skyblue);
+            background-repeat: no-repeat;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        /* BOX MODEL */
+        .box-demo {
+            width: 200px;
+            height: 100px;
+            border: 3px solid orange;
+            padding: 15px;
+            margin: 10px;
+            box-sizing: border-box;
+            background: lightyellow;
+        }
+
+        /* BORDER */
+        .border-demo {
+            border: 5px double purple;
+            border-radius: 15px;
+            padding: 10px;
+            width: 200px;
+            text-align: center;
+        }
+
+        /* DISPLAY & POSITION */
+        .pos-container {
+            position: relative;
+            height: 150px;
+            background: #eef;
+        }
+        .pos-box {
+            width: 80px;
+            height: 80px;
+            background: salmon;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+
+        /* FLEX */
+        .flex-demo {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: #def;
+            padding: 10px;
+        }
+        .flex-item {
+            background: #5af;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* GRID */
+        .grid-demo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background: #ffe;
+            padding: 10px;
+        }
+        .grid-item {
+            background: #faa;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* SHADOW & FILTER */
+        .shadow-demo {
+            background: white;
+            padding: 20px;
+            width: 150px;
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+            filter: brightness(1.2);
+            text-align: center;
+        }
+
+        /* TRANSITION */
+        .transition-demo {
+            background: tomato;
+            color: white;
+            padding: 20px;
+            width: 150px;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+        .transition-demo:hover {
+            background: limegreen;
+            transform: scale(1.2);
+        }
+
+        /* ANIMATION */
+        @keyframes move {
+            0% {transform: translateX(0);}
+            50% {transform: translateX(80px);}
+            100% {transform: translateX(0);}
+        }
+        .animation-demo {
+            background: purple;
+            color: white;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+            border-radius: 8px;
+            animation: move 2s infinite;
+        }
+
+        /* OVERFLOW / VISIBILITY */
+        .overflow-box {
+            width: 150px;
+            height: 50px;
+            border: 2px solid #333;
+            overflow: auto;
+        }
+
+        /* Z-INDEX */
+        .zindex-container {
+            position: relative;
+            height: 100px;
+        }
+        .z1, .z2 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+        .z1 {
+            background: red;
+            top: 0;
+            left: 20px;
+            z-index: 1;
+        }
+        .z2 {
+            background: blue;
+            top: 20px;
+            left: 40px;
+            z-index: 2;
+        }
+    </style>
 </head>
 <body>
-    jgkjlhj.lijl.j
+
+<h1>คู่มือสอน CSS Attributes ครบทุกคำสั่ง พร้อมตัวอย่าง</h1>
+
+<section>
+<h2>1. Text Properties (ข้อความ)</h2>
+<p>ใช้ตกแต่งข้อความ:</p>
+<pre><code>p {
+color: crimson;
+font-size: 20px;
+text-align: center;
+text-transform: uppercase;
+}</code></pre>
+<div class="example text-demo">นี่คือตัวอย่างข้อความ</div>
+</section>
+
+<section>
+<h2>2. Background & Color</h2>
+<p>ใช้ปรับสีและพื้นหลัง:</p>
+<pre><code>div {
+background-color: teal;
+background-image: linear-gradient(90deg, teal, skyblue);
+color: white;
+}</code></pre>
+<div class="example bg-demo">พื้นหลังแบบไล่เฉดสี</div>
+</section>
+
+<section>
+<h2>3. Box Model</h2>
+<pre><code>div {
+margin: 10px;
+padding: 15px;
+border: 3px solid orange;
+box-sizing: border-box;
+}</code></pre>
+<div class="example box-demo">Box Model</div>
+</section>
+
+<section>
+<h2>4. Border</h2>
+<pre><code>div {
+border: 5px double purple;
+border-radius: 15px;
+}</code></pre>
+<div class="example border-demo">Border Example</div>
+</section>
+
+<section>
+<h2>5. Display & Position</h2>
+<pre><code>.box {
+position: absolute;
+top: 30px;
+right: 30px;
+}</code></pre>
+<div class="example pos-container">
+    <div class="pos-box"></div>
+</div>
+</section>
+
+<section>
+<h2>6. Flexbox</h2>
+<pre><code>.container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}</code></pre>
+<div class="example flex-demo">
+    <div class="flex-item">A</div>
+    <div class="flex-item">B</div>
+    <div class="flex-item">C</div>
+</div>
+</section>
+
+<section>
+<h2>7. Grid</h2>
+<pre><code>.grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+}</code></pre>
+<div class="example grid-demo">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+</div>
+</section>
+
+<section>
+<h2>8. Shadow & Filter</h2>
+<pre><code>div {
+box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+filter: brightness(1.2);
+}</code></pre>
+<div class="example shadow-demo">มีเงาและความสว่าง</div>
+</section>
+
+<section>
+<h2>9. Transition</h2>
+<pre><code>div {
+transition: all 0.4s ease;
+}
+div:hover {
+transform: scale(1.2);
+}</code></pre>
+<div class="example transition-demo">วางเมาส์ที่นี่</div>
+</section>
+
+<section>
+<h2>10. Animation</h2>
+<pre><code>@keyframes move {
+0% {transform: translateX(0);}
+50% {transform: translateX(80px);}
+100% {transform: translateX(0);}
+}
+
+div {
+animation: move 2s infinite;
+}</code></pre>
+<div class="example animation-demo">กำลังเคลื่อนที่</div>
+</section>
+
+<section>
+<h2>11. Overflow & Visibility</h2>
+<pre><code>div {
+overflow: auto;
+visibility: visible;
+}</code></pre>
+<div class="example overflow-box">
+    เนื้อหานี้ยาวเกินกล่อง ลองเลื่อนดูเพื่อเห็นผลว่า overflow ทำงานอย่างไร
+</div>
+</section>
+
+<section>
+<h2>12. Z-index</h2>
+<pre><code>.red {z-index: 1;}
+.blue {z-index: 2;}</code></pre>
+<div class="example zindex-container">
+    <div class="z1"></div>
+    <div class="z2"></div>
+</div>
+</section>
+
 </body>
 </html>
