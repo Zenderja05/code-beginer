@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BASIC</title>
+</head>
+<body>
+    <spen class="CSS">
+        <h1>CSS</h1>
+    </spen>
+    <div class="what-is-css">
+        <p>CSS ย่อมาจาก Cascading Style Sheets</p>
+        <p>CSS ใช้สำหรับตกแต่งเว็บไซต์</p>
+        <p>CSS สามารถกำหนดสี, ฟอนต์, ขนาด, ระยะห่าง และอื่นๆ</p>
+        <p>CSS สามารถทำให้เว็บไซต์ดูสวยงามและน่าสนใจมากขึ้น</p>
+        <p>CSS สามารถทำให้เว็บไซต์ตอบสนองต่ออุปกรณ์ต่างๆ เช่น มือถือ แท็บเล็ต และคอมพิวเตอร์</p>
+        <p>CSS สามารถทำให้เว็บไซต์โหลดเร็วขึ้นโดยการลดขนาดไฟล์ HTML</p>
+        <p>CSS สามารถทำให้เว็บไซต์มีการจัดวางที่ดีขึ้นและง่ายต่อการอ่าน</p>
+    </div>
+    <spen class="การเชื่อม HTML กับ CSS">
+        <h1>การเชื่อม HTML กับ CSS</h1>
+    </spen>
+    <div class="การเชื่อม HTML กับ CSS สามารถทำได้ 3 วิธี">
+        <p>การเชื่อม HTML กับ CSS สามารถทำได้ 3 วิธี</p>
+    </div>
+    <div class="3 วิธีการเชื่อม HTML กับ CSS">
+        <ul>
+            <li>Inline CSS คือ การใช้ CSS ในแท็กนั้น</li>
+            <li>Internal CSS คือ การใช้ CSS ในแท็ก head</li>
+            <li>External CSS คือการใช้ CSS แบบแยกไฟล์</li>
+        </ul>
+    </div>
+    <spen class="ตัวอย่างการใช้ CSS">
+        <h1>ตัวอย่างการใช้ CSS</h1>
+    </sp>
+    <spen class="1. Inline CSS">
+        <h2>1. Inline CSS</h2>
+    </spen>
+    <div class="inline">
+        <p>&lt;p style="color:blue; font-size:20px;"&gt;นี่คือตัวอย่างการใช้ Inline CSS&lt;/p&gt;</p>
+    </div>
+    <div class="inline perfect">
+        <p style="color:blue; font-size:20px;">นี่คือตัวอย่างการใช้ Inline CSS</p>
+    </div>
+    <spen class="2. Internal CSS">
+        <h2>2. Internal CSS</h2>
+    </spen>
+    <div class="internal">
+        <p>
+            &lt;style&gt;
+                .internal-css {
+                    color: green;
+                    font-size: 18px;
+                }
+            &lt;/style&gt;
+            &lt;p class="internal-css"&gt;นี่คือตัวอย่างการใช้ Internal CSS&lt;/p&gt;
+        </p>
+    </div>
+    <style>
+        .internal-css {
+            color: green;
+            font-size: 18px;
+        }
+    </style>
+    <div class="internal perfect">
+        <p class="internal-css">นี่คือตัวอย่างการใช้ Internal CSS</p>
+    </div>
+    <spen class="3. External CSS">
+        <h2>3. External CSS</h2>
+    </spen>
+    <div>
+        <p class="external">
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+            &lt;p class="external-css"&gt;นี่คือตัวอย่างการใช้ External CSS&lt;/p&gt;
+        </p>
+    </div>
+    <link rel="stylesheet" href="styles.css">
+    <div>
+        <p class="external-css">นี่คือตัวอย่างการใช้ External CSS</p>
+    </div>
+    <spen class="CSS selector">
+        <h1>CSS selector</h1>
+    </spen>
+    <div class="CSS selector คืออะไร">
+        <p>CSS selector คือ ส่วนที่ใช้เลือกองค์ประกอบ HTML ที่ต้องการนำไปตกแต่งด้วย CSS</p>
+        <p>CSS selector มีหลายประเภท เช่น element selector, class selector, id selector, attribute selector และ pseudo-class selector</p>
+    </div>
+    <spen class="ตัวอย่าง CSS selector">
+        <h2>ตัวอย่าง CSS selector</h2>
+    </spen>
+    <div class="ตัวอย่าง selector">
+        <ul>
+            <li>Element selector: p { color: red; }</li>
+            <li>Class selector: .class-name { font-size: 20px; }</li>
+            <li>ID selector: #id-name { background-color: yellow; }</li>
+            <li>Attribute selector: a[target="_blank"] { text-decoration: underline; }</li>
+            <li>Pseudo-class selector: a:hover { color: green; }</li>
+        </ul>
+    </div>
+    <span class="attriburte media query">
+        <h2>attriburte media query</h2>
+    </span>
+    <div>
+        <p>คือการจัดรูปแบบ style ตามรูปแบบของอุปกรณ์</p>
+        <p>@media (min-width:) and (max-width:){}</p>
+    </div>
+    <div>
+        <ul>
+            <li>320px-480px โทรศัพท์</li>
+            <li>481px-768px แท็บเล็ต</li>
+            <li>769px-1024px โน๊ตบุ๊ค</li>
+            <li>1025px-1200px คอม</li>
+            <li>1201 จอTV</li>
+        </ul>
+    </div>
+    </div>
+    <span class="CSS media query">
+        <h1>CSS media query</h1>
+    </span>
+    <div class="CSS media query คืออะไร">
+        <p>CSS media query คือ เทคนิคที่ใช้ในการกำหนดสไตล์ CSS ให้เหมาะสมกับขนาดหน้าจอหรืออุปกรณ์ที่ใช้งาน</p>
+        <p>CSS media query สามารถใช้ในการสร้างเว็บไซต์ที่ตอบสนองต่ออุปกรณ์ต่างๆ (responsive web design)</p>
+        <p>CSS media query สามารถกำหนดเงื่อนไขต่างๆ เช่น ขนาดหน้าจอ, ความละเอียดหน้าจอ, ทิศทางการแสดงผล และอื่นๆ</p>
+    </div>
+    <span class="ตัวอย่าง CSS media query">
+        <h2>ตัวอย่าง CSS media query</h2>
+    </span>
+    <span class="universal selector">
+        <h1>universal selector</h1>
+    </span>
+    <div class="universal selector คืออะไร">
+        <p>universal selector คือ ตัวเลือกที่ใช้เลือกทุกองค์ประกอบในเอกสาร HTML</p>
+        <p>โดยใช้เครื่องหมายดอกจัน (*) เป็นตัวเลือก</p>
+        <p>มักใช้ในการรีเซ็ตสไตล์เริ่มต้นของเบราว์เซอร์</p>
+    </div>
+    <span class="ตัวอย่าง universal selector">
+        <h2>ตัวอย่าง universal selector</h2>
+    </span>
+    <div class="ตัวอย่าง universal selector">
+        <p>* { margin: 0; padding: 0; box-sizing: border-box; }(กดเอาคอมเมนท์ในตัวโค้ดก่อนเพื่อดูตัวอย่าง)</p>
+    </div>
+    <style>
+        /* * { margin: 0; padding: 0; box-sizing: border-box; } */
+    </style>
+    <span class="CSS attriburte">
+        <h1>CSS attriburte</h1>
+    </span>
+    <div class="attriburte font">
+        <h2>attriburte font</h2>
+    </div>
+    <div class="ตัวอย่าง attriburte font">
+        <ul>
+            <li>font-family: กำหนดฟอนต์ที่ใช้ในข้อความ</li>
+            <li>font-size: กำหนดขนาดของฟอนต์</li>
+            <li>font-weight: กำหนดความหนาของฟอนต์ เช่น normal, bold, bolder, lighter หรือค่าตัวเลข 100-900</li>
+            <li>font-style: กำหนดลักษณะของฟอนต์ เช่น normal, italic หรือ oblique</li>
+            <li>text-align: กำหนดการจัดตำแหน่งข้อความ เช่น left, right, center หรือ justify</li>
+            <li>text-decoration: กำหนดการตกแต่งข้อความ เช่น none, underline, overline หรือ line-through</li>
+            <li>color: กำหนดสีของข้อความ</li>
+        </ul>
+    </div>
+    <span class="attriburte color">
+        <h2>attriburte color</h2>
+    </span>
+    <div class="ตัวอย่าง attriburte color">
+        <ul>
+            <li>color: กำหนดสีของข้อความ</li>
+            <li>background-color: กำหนดสีพื้นหลังขององค์ประกอบ</li>
+            <li>border-color: กำหนดสีของเส้นขอบ</li>
+            <li>opacity: กำหนดความโปร่งใสขององค์ประกอบ โดยมีค่าอยู่ระหว่าง 0 (โปร่งใสเต็มที่) ถึง 1 (ทึบเต็มที่)</li>
+            <li>box-shadow: กำหนดเงาของกล่อง โดยสามารถกำหนดค่าต่างๆ เช่น ระยะห่าง, ความเบลอ, สี และอื่นๆ</li>
+        </ul>
+    </div>
+    <span class="attriburte text-align">
+        <h2>attriburte text-align</h2>
+    </span>
+    <div class="ตัวอย่าง attriburte text-align">
+        <ul>
+            <li>left: จัดข้อความชิดซ้าย</li>
+            <li>right: จัดข้อความชิดขวา</li>
+            <li>center: จัดข้อความให้อยู่กึ่งกลาง</li>
+            <li>justify: จัดข้อความให้ชิดทั้งสองด้าน โดยการเพิ่มระยะห่างระหว่างคำ</li>
+        </ul>
+    </div>
+    <span class="attriburte width-hight">
+        <h2>attriburte width-hight</h2>
+    </span>
+    <div class="ตัวอย่าง attriburte width-hight">
+        <ul>
+            <li>width: กำหนดความกว้างขององค์ประกอบ เช่น 100px, 50%, auto</li>
+            <li>height: กำหนดความสูงขององค์ประกอบ เช่น 100px, 50%, auto</li>
+            <li>max-width: กำหนดความกว้างสูงสุดขององค์ประกอบ เช่น 100px, 50%, none</li>
+            <li>max-height: กำหนดความสูงสูงสุดขององค์ประกอบ เช่น 100px, 50%, none</li>
+            <li>min-width: กำหนดความกว้างต่ำสุดขององค์ประกอบ เช่น 100px, 50%, auto</li>
+            <li>min-height: กำหนดความสูงต่ำสุดขององค์ประกอบ เช่น 100px, 50%, auto</li>
+        </ul>
+    </div>
+    <span class="attriburte broder">
+        <h2>attriburte broder</h2>
+    </span>
+    <div>
+        <ul>
+            <li>border-width: กำหนดความหนาของเส้นขอบ เช่น 1px, 0.5em, thin, medium, thick</li>
+            <li>border-style: กำหนดลักษณะของเส้นขอบ เช่น none, solid, dashed, dotted, double, groove, ridge, inset, outset</li>
+            <li>border-color: กำหนดสีของเส้นขอบ เช่น red, #ff0000, rgb(255,0,0)</li>
+            <li>border-radius: กำหนดความโค้งมนของมุมเส้นขอบ เช่น 5px, 50%, 1em</li>
+            <li>border: กำหนดเส้นขอบโดยรวมความหนา, ลักษณะ และสี เช่น 1px solid red</li>
+        </ul>
+    </div>
+    <span>
+        <h2>attriburte box-model</h2>
+    </span>
+    <div class="attriburte box-model">
+        <ul>
+            <li>margin: กำหนดระยะห่างภายนอกขององค์ประกอบ เช่น 10px, 1em, auto</li>
+                <ul>
+                    <li>margin-top: กำหนดระยะห่างด้านบน</li>
+                    <li>margin-right: กำหนดระยะห่างด้านขวา</li>
+                    <li>margin-bottom: กำหนดระยะห่างด้านล่าง</li>
+                    <li>margin-left: กำหนดระยะห่างด้านซ้าย</li>
+                </ul>
+            <li>padding: กำหนดระยะห่างภายในขององค์ประกอบ เช่น 10px, 1em, 0</li>
+                <ul>
+                    <li>padding-top: กำหนดระยะห่างด้านบน</li>
+                    <li>padding-right: กำหนดระยะห่างด้านขวา</li>
+                    <li>padding-bottom: กำหนดระยะห่างด้านล่าง</li>
+                    <li>padding-left: กำหนดระยะห่างด้านซ้าย</li>
+                </ul>
+            <li>border: กำหนดเส้นขอบขององค์ประกอบ โดยรวมความหนา, ลักษณะ และสี เช่น 1px solid red</li>
+            <li>box-sizing: กำหนดวิธีการคำนวณขนาดขององค์ประกอบ เช่น content-box (ค่าเริ่มต้น) หรือ border-box</li>
+        </ul>
+    </div>
+    <span class="attriburte background">
+        <h2>attriburte background</h2>
+    </span>
+    <div class="attriburte background">
+        <ul>
+            <li>background-color: กำหนดสีพื้นหลังขององค์ประกอบ เช่น red, #ff0000, rgb(255,0,0)</li>
+            <li>background-image: กำหนดภาพพื้นหลังขององค์ประกอบ เช่น url("image.jpg")</li>
+            <li>background-repeat: กำหนดการทำซ้ำของภาพพื้นหลัง เช่น repeat (ค่าเริ่มต้น), no-repeat, repeat-x, repeat-y</li>
+            <li>background-size: กำหนดขนาดของภาพพื้นหลัง เช่น auto (ค่าเริ่มต้น), cover, contain หรือกำหนดขนาดเป็น px หรือ %</li>
+            <li>background-position: กำหนดตำแหน่งของภาพพื้นหลัง เช่น left top (ค่าเริ่มต้น), center center, right bottom หรือกำหนดเป็น px หรือ %</li>
+            <li>background-attachment: กำหนดการเลื่อนของภาพพื้นหลัง เช่น scroll (ค่าเริ่มต้น) หรือ fixed</li>
+        </ul>
+    </div>
+    <spen class="attriburte float">
+        <h2>attriburte float(การลอยของ element แบบเว็บพนัน))</h2>
+    </spen>
+    <div class="attriburte float">
+        <ul>
+            <li>float: กำหนดให้องค์ประกอบลอยซ้ายหรือขวา เช่น left, right หรือ none (ค่าเริ่มต้น)</li>
+            <li>clear: กำหนดการหยุดการลอยขององค์ประกอบ เช่น left, right, both หรือ none (ค่าเริ่มต้น)</li>
+        </ul>
+    </div>
+    <span class="attriburte link">
+        <h2>attriburte link</h2>
+    </span>
+    <div class="text-decoretion">
+        <p>ถ้าต้องการเอาเส้นใต้ของลิ้งออกให้ใช้ text-decoretion: none;</p>
+    </div>
+    <div class="link">
+        <ul>
+            <li>a:link style เริ่มต้น</li>
+            <li>a:hover style หลังจากที่กดไปแล้ว</li>
+            <li>a:visited style หลังจากที่เมาส์วาง</li>
+            <li>a:active style ขณะที่กดลิงค์</li>
+        </ul>
+    </div>
+    <spen>
+        <h2>attriburte display</h2>
+    </spen>
+    <div class="attriburte display">
+        <ul>
+            <li>display: กำหนดลักษณะการแสดงผลขององค์ประกอบ เช่น block, inline, inline-block, none</li>
+            <li>visibility: กำหนดการมองเห็นขององค์ประกอบ เช่น visible (ค่าเริ่มต้น), hidden, collapse</li>
+        </ul>
+    </div>
+    <spen class="attriburte position">
+        <h2>attriburte position</h2>
+    </spen>
+    <div class="attriburte position">
+        <ul>
+            <li>position: กำหนดวิธีการจัดวางองค์ประกอบ เช่น static (ค่าเริ่มต้น), relative, absolute, fixed, sticky</li>
+            <li>top: กำหนดระยะห่างจากด้านบนขององค์ประกอบเมื่อใช้ position ที่ไม่ใช่ static</li>
+            <li>right: กำหนดระยะห่างจากด้านขวาขององค์ประกอบเมื่อใช้ position ที่ไม่ใช่ static</li>
+            <li>bottom: กำหนดระยะห่างจากด้านล่างขององค์ประกอบเมื่อใช้ position ที่ไม่ใช่ static</li>
+            <li>left: กำหนดระยะห่างจากด้านซ้ายขององค์ประกอบเมื่อใช้ position ที่ไม่ใช่ static</li>
+            <li>z-index: กำหนดลำดับชั้นขององค์ประกอบเมื่อมีการซ้อนทับกัน โดยมีค่าเป็นจำนวนเต็มที่มากกว่าจะอยู่ด้านบน</li>
+        </ul>
+    </div>
+    <spen class="attriburte visibility">
+        <h2>attriburte visibility</h2>
+    </spen>
+    <div class="visibility คืออะไร">
+        <p>คือ กำหนดการมองเห็นขององค์ประกอบ เช่น</p>
+    </div>
+    <div class="element visibility">
+        <ul>
+            <li>visible (ค่าเริ่มต้น)</li>
+            <li>hidden (ซ่อนวัตถุ)</li>
+            <li>collapse (ซ่อนวัตถุและไม่ใช้พื้นที่)</li>
+        </ul>
+    </div>
+    <spen class="attriburte position">
+        <h2>attriburte position</h2>
+    </spen>
+    <div class="position คืออะไร">
+        <p>คือ กำหนดวิธีการจัดวางองค์ประกอบ เช่น</p>
+    </div>
+    <div class="element position">
+        <ul>
+            <li>static จัดวางค่าเริ่มต้น</li>
+            <li>relative ใช้ในการจัดวางและกำหนดตำแหน่งวัตถุโดยการนับจากจุดที่วัตถุนั้นๆอยู่</li>
+            <li>absolute ใช้ในการจัดวางและกำหนดตำแหน่งวัตถุโดยการนับจากจุดที่อยู่ใกล้ที่สุดที่มีการกำหนด position เป็น</li>
+            <ul>
+                <li>fiixde (ใช้ในการจัดวางวัตถุให้อยู่ตำแหน่งเดิม)</li>
+                <li>sticky (ให้วัตถุติดขอบเมื่อเลื่อนไปถึง)</li>
+            </ul>
+        </ul>
+    </div>
+    <span class="attriburte z-index">
+        <h2>attriburte z-index</h2>
+    </span>
+    <div class="z-index คืออะไร">
+        <p>คือ การกำหนดลำดับชั้นขององค์ประกอบเมื่อมีการซ้อนทับกัน</p>
+    </div>
+    <div class="element z-index">
+        <ul>
+            <li>มีค่าเป็นจำนวนเต็มที่มากกว่าจะอยู่ด้านบน</li>
+            <li>ค่าเริ่มต้นคือ auto ซึ่งหมายความว่าองค์ประกอบจะถูกจัดวางตามลำดับในเอกสาร HTML</li>
+            <li>ต้องใช้ร่วมกับ position ที่ไม่ใช่ static (เช่น relative, absolute, fixed, sticky)</li>
+        </ul>
+    <span class="attriburte important">
+        <h2>attriburte !important</h2>
+    </span>
+    <div class="important คืออะไร">
+        <p>คือ การเพิ่มความสำคัญให้กับกฎ CSS ที่กำหนดไว้ โดยใช้คำว่า !important ต่อท้ายค่าของคุณสมบัติ</p>
+        <p>เมื่อมีการใช้ !important กับกฎ CSS จะทำให้กฎนั้นมีความสำคัญสูงสุดและจะถูกนำไปใช้แทนที่กฎอื่นๆ ที่อาจขัดแย้งกัน</p>
+        <p>ควรใช้ !important อย่างระมัดระวังและในกรณีที่จำเป็นเท่านั้น เนื่องจากอาจทำให้การจัดการสไตล์ของเว็บไซต์ซับซ้อนขึ้นและยากต่อการบำรุงรักษา</p>
+    </div>
+    <spen class="attriburte overflow">
+        <h2>attriburte overflow</h2>
+    </spen>
+    <div class="overflow คืออะไร">
+        <p>คือ การกำหนดวิธีการจัดการกับเนื้อหาที่เกินขนาดของกล่องที่กำหนดไว้</p>
+    </div>
+    <div class="element overflow">
+        <ul>
+            <li>visible (ค่าเริ่มต้น): เนื้อหาที่เกินขนาดของกล่องจะแสดงออกมา</li>
+            <li>hidden: เนื้อหาที่เกินขนาดของกล่องจะถูกซ่อน</li>
+            <li>scroll: เพิ่มแถบเลื่อน (scrollbar) เพื่อให้สามารถเลื่อนดูเนื้อหาที่เกินขนาดได้</li>
+            <ul>
+                <li>overflow:scroll</li>
+                <li>overflow-x:scroll (เพิ่มแถบเลื่อนแนวนอน)</li>
+                <li>overflow-y:scroll (เพิ่มแถบเลื่อนแนวตั้ง)</li>
+            </ul>
+            <li>auto: เพิ่มแถบเลื่อนเมื่อเนื้อหาที่เกินขนาดของกล่อง</li>
+        </ul>
+    </div>
+    <spen class="attriburte cursor style">
+        <h2>attriburte cursor style</h2>
+    </spen>
+    <div class="cursor style คืออะไร">
+        <p>คือ การกำหนดลักษณะของเคอร์เซอร์เมื่อวางเมาส์เหนือองค์ประกอบ</p>
+    </div>
+    <div class="element cursor style">
+        <ul>
+            <li>default: เคอร์เซอร์รูปลูกศรปกติ (ค่าเริ่มต้น)</li>
+            <li>pointer: เคอร์เซอร์รูปมือชี้ ใช้สำหรับลิงก์หรือปุ่มที่สามารถคลิกได้</li>
+            <li>text: เคอร์เซอร์รูปตัว I ใช้สำหรับข้อความที่สามารถแก้ไขได้</li>
+            <li>move: เคอร์เซอร์รูปสี่ทิศทาง ใช้สำหรับการลากวัตถุ</li>
+            <li>not-allowed: เคอร์เซอร์รูปวงกลมมีเส้นทแยง ใช้สำหรับวัตถุที่ไม่สามารถใช้งานได้</li>
+            <li>crosshair: เคอร์เซอร์รูปกากบาท ใช้สำหรับการเลือกพื้นที่</li>
+        </ul>
+    </div>
+    <span class="attriburte box-shadow">
+        <h2>attriburte box-shadow</h2>
+    </span>
+    <div class="box-shadow คืออะไร">
+        <p>คือ การเพิ่มเงาให้กับกล่องขององค์ประกอบ</p>
+    </div>
+    <div class="element box-shadow">
+        <ul>
+            <li>box-shadow: กำหนดเงาของกล่อง โดยสามารถกำหนดค่าต่างๆ เช่น ระยะห่าง, ความเบลอ, สี และอื่นๆ</li>
+            <li>box-shadow: x(+ขวา,-ซ้าย) y(+บน,-ล่าง) blur(ความเลอ) spreaad(ขนาดของเงา) color(สี)</li>
+        </ul>
+    </div>
+    <span class="attriburte opecity">
+        <h2>attriburte opecity</h2>
+    </span>
+    <div class="opecity คืออะไร">
+        <p>คือการกำหนดค่าความทึบ</p>
+    </div>
+    <ul>
+        <li>ค่าอยู่ระหว่าง 0.0-0.1</li>
+        <li>ยิ่งค่าน้อย ยิ่งจาง</li>
+        <li>ยิ่งค่ามาก ยิ่งทึบ</li>
+    </ul>
+    </div>
+    <spen class="attriburte flexbox">
+        <h2>attriburte flexbox</h2>
+    </spen>
+    <div class="flexbox คืออะไร">
+        <p>คือเครื่องในการจัดการ element ต่างๆในหน้าเว็บทำงานคล้ายกับ block inline position</p>
+    </div>
+    <div class="element flexbox">
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
