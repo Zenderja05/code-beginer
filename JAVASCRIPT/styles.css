@@ -1,3 +1,268 @@
 .external-css {
     color: red;
+    border: solid;
+    border-radius: 5px;
+    text-align: center;
+}
+body {
+    background-color:cornflowerblue;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+/* CSS */
+.CSS{
+    background-color: blue;
+    padding: 5px;
+    border: solid;
+    border-color: black;
+    color: aliceblue;
+}
+/* cssคืออะไร */
+.container1{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin: 15px;
+}
+.cssคืออะไร{
+    background-color: aliceblue;
+    border: solid;
+    border-radius: 20px;
+    margin-top: 5px;
+    width: 450px ;
+}
+/* การเชื่อม */
+.การเชื่อม{
+    background-color: aliceblue;
+    border: solid;
+    border-radius: 20px;
+    margin-top: 5px;
+    text-align: center;
+    width: 500px ;
+}
+.hการเชื่อม{
+    background-color: #6e82ff;
+    border: solid;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+    margin-left: 53px;
+}
+/* ตัวอย่างการใช้ */
+.container2{
+    display: flex;
+    justify-content: center;
+}
+.ตัวอย่างการใช้{
+    background-color: lightskyblue;
+    border: solid;
+    border-radius: 35px;
+    width: 300px;
+    text-align: center;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 15px;
+}
+.inlineCSS{
+    background-color: aliceblue;
+    border: solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+.hinlineCSS{
+    background-color: #6e82ff;
+    border: solid;
+    border-radius: 5px;
+    text-align: center;
+}
+.InternalCSS{
+    background-color: aliceblue;
+    border: solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+.hInternalCSS{
+    background-color: #6e82ff;
+    border: solid;
+    border-radius: 5px;
+    text-align: center;
+}
+.ExternalCSS{
+    background-color: aliceblue;
+    border: solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+.hExternalCSS{
+    background-color: #6e82ff;
+    border: solid;
+    border-radius: 5px;
+    text-align: center;
+}
+/* CSS selector */
+.container4{
+    display: flex;
+    justify-content: center;
+}
+.hCSSselector{
+    background-color: lightskyblue;
+    border: solid;
+    border-radius: 35px;
+    width: 300px;
+    text-align: center;
+}
+.container5{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin: 15px;
+}
+.CSSselectorคือ{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 400px;
+    padding: 25px;
+}
+.ตัวอย่างCSSselector{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+.hตัวอย่างCSSselector{
+    background-color: #6e82ff;
+    border: solid;
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+}
+/* universal selector */
+.box1{
+    display: flex;
+    justify-content: center;
+}
+.universalselector{
+    display: flex;
+    justify-content: center;
+}
+.huniversalselector{
+    background-color: lightskyblue;
+    border: solid;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    padding: 15px;
+}
+.container6{
+    display: flex;
+    gap: 100px;
+    margin: 20px;
+}
+.universalselectorคือ{
+    border: solid;
+    border-radius: 15px;
+    width: 350px;
+    padding-right: 25px;
+    background-color: aliceblue;
+}
+.ตัวอย่างuniversalselecto{
+    border: solid;
+    border-radius: 15px;
+    width: 700px;
+    background-color: aliceblue;
+    text-align: center;
+}
+.universalselectorตัวอย่าง{
+    display: flex;
+    justify-content: center;
+}
+.huniversalselectorตัวอย่าง{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+}
+/* CSS property */
+.CSSproperty{
+    border: solid;
+    border-radius: 5px;
+    width: 250px;
+    background-color: blue;
+    border-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    margin-left: 15px;
+}
+/* --------------------------------------- */
+.container7{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+/* property media query */
+.propertymediaquery{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding: 15px;
+}
+.boxhpropertymediaquery{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    text-align: center;
+}
+/* property font */
+.propertyfont{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding: 10px;
+    width: 550px;
+}
+.boxhpropertyfont{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    text-align: center;
+    width: 200px;
+}
+/* property color */
+.propertycolor{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding: 10px;
+    width: 350px;
+}
+.boxhpropertycolor{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    text-align: center;
+    width: 200px;
+}
+/* ----------------------------------------- */
+.container8{
+    display: flex;
+    gap: 50px;
+    margin-top: 15px;
+}
+.propertytext-align{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+.hpropertytext-align{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 230px;
+    text-align: center;
+    padding: 5px;
 }

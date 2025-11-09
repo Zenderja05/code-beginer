@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- CSS -->
+    <header class="CSS">
+            <h1>CSS</h1>
+        </header>
+        <div class="container1">
+            <article class="cssคืออะไร">
+                <ul>
+                    <li>CSS ย่อมาจาก Cascading Style Sheets</li>
+                    <li>CSS ใช้สำหรับตกแต่งเว็บไซต์</li>
+                    <li>CSS สามารถกำหนดสี, ฟอนต์, ขนาด, ระยะห่าง และอื่นๆ</li>
+                    <li>CSS สามารถทำให้เว็บไซต์ดูสวยงามและน่าสนใจมากขึ้น</li>
+                    <li>CSS สามารถทำให้เว็บไซต์ตอบสนองต่ออุปกรณ์ต่างๆ เช่น มือถือ แท็บเล็ต และคอมพิวเตอร์</li>
+                    <li>CSS สามารถทำให้เว็บไซต์โหลดเร็วขึ้นโดยการลดขนาดไฟล์ HTML</li>
+                    <li>CSS สามารถทำให้เว็บไซต์มีการจัดวางที่ดีขึ้นและง่ายต่อการอ่าน</li>
+                </ul>
+            </article>
+            <article class="การเชื่อม">
+<!-- การเชื่อม CSS -->
+                    <h1 class="hการเชื่อม">การเชื่อม HTML กับ CSS</h1>
+<!-- การเชื่อม HTML กับ CSS สามารถทำได้ 3 วิธี -->
+                    <p>การเชื่อม HTML กับ CSS สามารถทำได้ 3 วิธี</p>
+                    <p>Inline CSS คือ การใช้ CSS ในแท็กนั้น</p>
+                    <p>Internal CSS คือ การใช้ CSS ในแท็ก head</p>
+                    <p>External CSS คือการใช้ CSS แบบแยกไฟล์</p>
+            </article>
+        </div>
+<!-- ตัวอย่างการใช้ CSS -->
+        <div class="container2">
+            <header class="ตัวอย่างการใช้">
+                <h1>ตัวอย่างการใช้ CSS</h1>
+            </header>
+        </div>
+    <div class="container3">
+<!-- 1.inline CSS -->
+        <section class="inlineCSS">
+            <h2 class="hinlineCSS">1. Inline CSS</h2>
+            <p>
+                &lt;p style="color:blue; font-size:20px;"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นี่คือตัวอย่างการใช้ Inline CSS<br>
+                &lt;/p&gt;
+            </p>
+            <p style="color:blue; font-size:20px; border: solid; border-radius: 5px;">นี่คือตัวอย่างการใช้ Inline CSS</p>
+        </section>
+<!-- 2. Internal CSS -->
+        <section class="InternalCSS">
+            <h2 class="hInternalCSS">2. Internal CSS</h2>
+            <p>
+                &lt;style&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.internal-css {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 18px;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &lt;/style&gt;<br>
+                &lt;p class="internal-css"&gt;นี่คือตัวอย่างการใช้ Internal CSS&lt;/p&gt;
+            </p>
+        <style>
+            .internal-css {
+                color: green;
+                font-size: 18px;
+                border: solid;
+                border-radius: 5px;
+                text-align: center;
+            }
+        </style>
+            <p class="internal-css">นี่คือตัวอย่างการใช้ Internal CSS</p>
+        </section>
+<!-- 3. External CSS -->
+        <section class="ExternalCSS">
+            <h2 class="hExternalCSS">3. External CSS</h2>
+            <p class="external">
+                &lt;link rel="stylesheet" href="styles.css"&gt;<br>
+                &lt;p class="external-css"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นี่คือตัวอย่างการใช้ External CSS<br>
+                &lt;/p&gt;
+            </p>
+        <link rel="stylesheet" href="styles.css">
+            <p class="external-css">นี่คือตัวอย่างการใช้ External CSS</p>
+        </section>
+    </div>
+<!-- CSS selector -->
+    <div class="container4">
+        <header class="hCSSselector">
+            <h1>CSS selector</h1>
+        </header>
+    </div>
+    <div class="container5">
+        <section class="CSSselectorคือ">
+            <p>CSS selector คือ ส่วนที่ใช้เลือกองค์ประกอบ HTML ที่ต้องการนำไปตกแต่งด้วย CSS</p>
+            <p>CSS selector มีหลายประเภท เช่น element selector, class selector, id selector, attribute selector และ pseudo-class selector</p>
+        </section>
+<!-- ตัวอย่าง CSS selector -->
+        <section class="ตัวอย่างCSSselector">
+            <div class="box1">
+                <h2 class="hตัวอย่างCSSselector">
+                    ตัวอย่าง CSS selector
+                </h2>
+            </div>
+                <ul>
+                    <li>Element selector: p { color: red; }</li>
+                    <li>Class selector: .class-name { font-size: 20px; }</li>
+                    <li>ID selector: #id-name { background-color: yellow; }</li>
+                    <li>Attribute selector: a[target="_blank"] { text-decoration: underline; }</li>
+                    <li>Pseudo-class selector: a:hover { color: green; }</li>
+                </ul>
+        </section>
+    </div>
+    <div class="universalselector">
+        <h1 class="huniversalselector">universal selector</h1>
+    </div>
+    <div class="container6">
+        <section class="universalselectorคือ">
+            <ul>
+                <li>universal selector คือ ตัวเลือกที่ใช้เลือกทุกองค์ประกอบในเอกสาร HTML</li>
+                <li>โดยใช้เครื่องหมายดอกจัน (*) เป็นตัวเลือก</li>
+                <li>มักใช้ในการรีเซ็ตสไตล์เริ่มต้นของเบราว์เซอร์</li>
+            </ul>
+        </section>
+        <section class="ตัวอย่างuniversalselecto">
+<!-- ตัวอย่าง universal selector -->
+            <div class="universalselectorตัวอย่าง">
+                <h2 class="huniversalselectorตัวอย่าง">ตัวอย่าง universal selector</h2>
+            </div>
+            <p>* { margin: 0; padding: 0; box-sizing: border-box; }(กดเอาคอมเมนท์ในตัวโค้ดก่อนเพื่อดูตัวอย่าง)</p>
+        <style>
+            /* * { margin: 0; padding: 0; box-sizing: border-box; } */
+        </style>
+        </section>
+    </div>
+<!-- CSS property -->
+        <h1 class="CSSproperty">CSS property</h1>
+<!-- property media query -->
+    <div class="container7">
+        <section class="propertymediaquery">
+            <div class="boxhpropertymediaquery">
+                <h2>property media query</h2>
+            </div>
+            <p>คือการจัดรูปแบบ style ตามรูปแบบของอุปกรณ์</p>
+            <p>@media (min-width:) and (max-width:){}</p>
+        <ul>
+            <li>320px-480px โทรศัพท์</li>
+            <li>481px-768px แท็บเล็ต</li>
+            <li>769px-1024px โน๊ตบุ๊ค</li>
+            <li>1025px-1200px คอม</li>
+            <li>1201 จอTV</li>
+        </ul>
+        </section>
+        <section class="propertyfont">
+<!-- property font -->
+        <div class="boxhpropertyfont">
+            <h2>property font</h2>
+        </div>
+<!-- ตัวอย่าง property font -->
+        <ul>
+            <li>font-family: กำหนดฟอนต์ที่ใช้ในข้อความ</li>
+            <li>font-size: กำหนดขนาดของฟอนต์</li>
+            <li>font-weight: กำหนดความหนาของฟอนต์ เช่น normal, bold, bolder, lighter หรือค่าตัวเลข 100-900</li>
+            <li>font-style: กำหนดลักษณะของฟอนต์ เช่น normal, italic หรือ oblique</li>
+            <li>text-align: กำหนดการจัดตำแหน่งข้อความ เช่น left, right, center หรือ justify</li>
+            <li>text-decoration: กำหนดการตกแต่งข้อความ เช่น none, underline, overline หรือ line-through</li>
+            <li>color: กำหนดสีของข้อความ</li>
+        </ul>
+        </section>
+        <section class="propertycolor">
+<!-- property color -->
+            <div class="boxhpropertycolor">
+                <h2>property color</h2>
+            </div>
+<!-- ตัวอย่าง property color -->
+            <ul>
+                <li>color: กำหนดสีของข้อความ</li>
+                <li>background-color: กำหนดสีพื้นหลังขององค์ประกอบ</li>
+                <li>border-color: กำหนดสีของเส้นขอบ</li>
+                <li>opacity: กำหนดความโปร่งใสขององค์ประกอบ โดยมีค่าอยู่ระหว่าง 0 (โปร่งใสเต็มที่) ถึง 1 (ทึบเต็มที่)</li>
+                <li>box-shadow: กำหนดเงาของกล่อง โดยสามารถกำหนดค่าต่างๆ เช่น ระยะห่าง, ความเบลอ, สี และอื่นๆ</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container8">
+        <section class="propertytext-align">
+<!-- property text-align -->
+                <h2 class="hpropertytext-align">property text-align</h2>
+<!-- ตัวอย่าง property text-align -->
+                <ul>
+                    <li>left: จัดข้อความชิดซ้าย</li>
+                    <li>right: จัดข้อความชิดขวา</li>
+                    <li>center: จัดข้อความให้อยู่กึ่งกลาง</li>
+                    <li>justify: จัดข้อความให้ชิดทั้งสองด้าน โดยการเพิ่มระยะห่างระหว่างคำ</li>
+                </ul>
+        </section>
+    </div>
+</body>
+</html>
