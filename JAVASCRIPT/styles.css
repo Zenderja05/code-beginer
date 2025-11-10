@@ -251,18 +251,527 @@ body {
 .container8{
     display: flex;
     gap: 50px;
-    margin-top: 15px;
+    margin: 10px;
+    justify-content: center;
 }
+/* propertytext-align */
 .propertytext-align{
     border: solid;
     border-radius: 15px;
     background-color: aliceblue;
+    width: 500px;
+    padding: 5px;
 }
 .hpropertytext-align{
     border: solid;
     border-radius: 5px;
     background-color: #6e82ff;
     width: 230px;
+    text-align: center;
+    padding: 5px;
+}
+/* property width height */
+.propertywidth-hight{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+}
+.hpropertywidth-hight{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 230px;
+    text-align: center;
+    padding: 5px;
+}
+/* -------------------------------------------- */
+.container9{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 50px;
+}
+/* property border */
+.propertyborder{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+    height: 230px;
+    margin-top: 85px;
+}
+.hpropertyborder{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 230px;
+    text-align: center;
+    padding: 5px;
+}
+/* property box-model */
+.propertybox-model{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+}
+.hpropertybox-model{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 230px;
+    text-align: center;
+    padding: 5px;
+}
+/* -------------------------------------------- */
+.container10{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 50px;
+}
+/* property background */
+.propertybackground{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 900px;
+    padding: 5px;
+}
+.hpropertybackground{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 230px;
+    text-align: center;
+    padding: 5px;
+}
+/* ----------------------------------------------- */
+.container11{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 50px;
+}
+/* property float */
+.propertyfloat{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 700px;
+    padding: 5px;
+    height: 150px;
+    margin-top: 35px;
+}
+.hpropertyfloat{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 600px;
+    text-align: center;
+    padding: 5px;
+}
+/* propertty link */
+.propertylink{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 500px;
+    padding: 5px;
+}
+.hpropertylink{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 230px;
+    text-align: center;
+    padding: 5px;
+}
+/* ----------------------------------------- */
+.container12{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 50px;
+}
+/* property position */
+.propertyposition{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 700px;
+    padding: 5px;
+}
+.hpropertyposition{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 600px;
+    text-align: center;
+    padding: 5px;
+}
+/* property z-index */
+.propertyz-index{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+    height: 230px;
+    margin-top: 75px;
+}
+.hpropertyz-index{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* ----------------------------------------- */
+.container13{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 50px;
+}
+/* property visibility */
+.propertyvisibility{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 320px;
+    padding: 5px;
+    height: 200px;
+    margin-top: 75px;
+}
+.hpropertyvisibility{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* property important */
+.propertyimportant{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 400px;
+    height: 300px;
+    padding: 5px;
+    margin-top: 15px;
+}
+.hpropertyimportant{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* property overflow */
+.propertyoverflow{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 500px;
+    padding: 5px;
+}
+.hpropertyoverflow{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* ----------------------------------------- */
+.container14{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 50px;
+}
+/* property  style */
+.propertycursor-style{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+    height: 250px;
+}
+.hpropertycursor-style{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* property box-shadow */
+.propertybox-shadow{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+    height: 200px;
+    margin-top: 25px;
+}
+.hpropertybox-shadow{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* ------------------------------------------- */
+.container15{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 50px;
+}
+/* property opacity */
+.propertyopecity{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 500px;
+    padding: 5px;
+    height: 200px;
+    margin-top: 60px;
+}
+.hpropertyopecity{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* property display */
+.propertydisplay{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+}
+.hpropertydisplay{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* property flex-direction */
+.propertyflex-direction{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+    height: 220px;
+    margin-top: 45px;
+}
+.hpropertyflex-direction{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* ----------------------------------------- */
+.container16{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 50px;
+}
+/* property flex-wrap */
+.propertyflex-wrap{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+    height: 250px;
+    margin-top: 45px;
+}
+.hpropertyflex-wrap{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* propert flex-properties */
+.propertyflex-properties{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+    height: 280px;
+    margin-top: 30px;
+}
+.hpropertyflex-properties{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* .property justify-content */
+.propertyjustify-content{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 500px;
+    padding: 5px;
+    height: 280px;
+    margin-top: 30px;
+}
+.hpropertyjustify-content{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* ------------------------------------------------ */
+.container17{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 50px;
+}
+/* property flex-alignment */
+.propertyflex-alignment{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+    height: 240px;
+    margin-top: 30px;
+}
+.hpropertyflex-alignment{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* property grid-layout */
+.propertygrid-layout{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+    height: 160px;
+    margin-top: 70px;
+}
+.hpropertygrid-layout{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* property text-shadow */
+.propertytext-shadow{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+    height: 240px;
+    margin-top: 30px;
+}
+.hpropertytext-shadow{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* ----------------------------------------- */
+.container18{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 50px;
+}
+/* property transform */
+.propertytranform{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+    height: 300px;
+    margin-top: 30px;
+}
+.hpropertytranform{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* property transition */
+.propertytransition{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+    height: 290px;
+    margin-top: 30px;
+}
+.hpropertytransition{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+/* property animetion */
+.propertyanimetion{
+    border: solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    padding: 5px;
+    height: 350px;
+    margin-top: 30px;
+}
+.hpropertyanimetion{
+    border: solid;
+    border-radius: 5px;
+    background-color: #6e82ff;
+    width: 300px;
     text-align: center;
     padding: 5px;
 }

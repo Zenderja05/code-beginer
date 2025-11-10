@@ -1,348 +1,576 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>คู่มือสอน CSS Attributes ครบทุกคำสั่ง</title>
-    <style>
-        body {
-            font-family: "Segoe UI", sans-serif;
-            background: #f5f5f5;
-            color: #222;
-            padding: 20px;
-            line-height: 1.6;
-        }
-
-        h1, h2 {
-            color: #0077ff;
-            border-bottom: 2px solid #0077ff;
-            padding-bottom: 5px;
-        }
-
-        section {
-            background: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-        }
-
-        .example {
-            border: 1px dashed #aaa;
-            padding: 10px;
-            margin-top: 10px;
-            background: #fafafa;
-        }
-
-        code {
-            background: #eaeaea;
-            padding: 2px 6px;
-            border-radius: 5px;
-        }
-
-        /* ---------- ตัวอย่าง CSS แต่ละหมวด ---------- */
-
-        /* TEXT */
-        .text-demo {
-            color: crimson;
-            font-size: 20px;
-            font-weight: bold;
-            font-style: italic;
-            text-decoration: underline;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            word-spacing: 4px;
-            text-align: center;
-        }
-
-        /* COLOR & BACKGROUND */
-        .bg-demo {
-            color: white;
-            background-color: teal;
-            background-image: linear-gradient(90deg, teal, skyblue);
-            background-repeat: no-repeat;
-            padding: 15px;
-            border-radius: 8px;
-        }
-
-        /* BOX MODEL */
-        .box-demo {
-            width: 200px;
-            height: 100px;
-            border: 3px solid orange;
-            padding: 15px;
-            margin: 10px;
-            box-sizing: border-box;
-            background: lightyellow;
-        }
-
-        /* BORDER */
-        .border-demo {
-            border: 5px double purple;
-            border-radius: 15px;
-            padding: 10px;
-            width: 200px;
-            text-align: center;
-        }
-
-        /* DISPLAY & POSITION */
-        .pos-container {
-            position: relative;
-            height: 150px;
-            background: #eef;
-        }
-        .pos-box {
-            width: 80px;
-            height: 80px;
-            background: salmon;
-            position: absolute;
-            top: 30px;
-            right: 30px;
-        }
-
-        /* FLEX */
-        .flex-demo {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background: #def;
-            padding: 10px;
-        }
-        .flex-item {
-            background: #5af;
-            color: white;
-            padding: 15px;
-            border-radius: 10px;
-        }
-
-        /* GRID */
-        .grid-demo {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            background: #ffe;
-            padding: 10px;
-        }
-        .grid-item {
-            background: #faa;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-        }
-
-        /* SHADOW & FILTER */
-        .shadow-demo {
-            background: white;
-            padding: 20px;
-            width: 150px;
-            box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
-            filter: brightness(1.2);
-            text-align: center;
-        }
-
-        /* TRANSITION */
-        .transition-demo {
-            background: tomato;
-            color: white;
-            padding: 20px;
-            width: 150px;
-            text-align: center;
-            transition: all 0.4s ease;
-        }
-        .transition-demo:hover {
-            background: limegreen;
-            transform: scale(1.2);
-        }
-
-        /* ANIMATION */
-        @keyframes move {
-            0% {transform: translateX(0);}
-            50% {transform: translateX(80px);}
-            100% {transform: translateX(0);}
-        }
-        .animation-demo {
-            background: purple;
-            color: white;
-            padding: 10px;
-            width: 100px;
-            text-align: center;
-            border-radius: 8px;
-            animation: move 2s infinite;
-        }
-
-        /* OVERFLOW / VISIBILITY */
-        .overflow-box {
-            width: 150px;
-            height: 50px;
-            border: 2px solid #333;
-            overflow: auto;
-        }
-
-        /* Z-INDEX */
-        .zindex-container {
-            position: relative;
-            height: 100px;
-        }
-        .z1, .z2 {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-        }
-        .z1 {
-            background: red;
-            top: 0;
-            left: 20px;
-            z-index: 1;
-        }
-        .z2 {
-            background: blue;
-            top: 20px;
-            left: 40px;
-            z-index: 2;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-
-<h1>คู่มือสอน CSS Attributes ครบทุกคำสั่ง พร้อมตัวอย่าง</h1>
-
-<section>
-<h2>1. Text Properties (ข้อความ)</h2>
-<p>ใช้ตกแต่งข้อความ:</p>
-<pre><code>p {
-color: crimson;
-font-size: 20px;
-text-align: center;
-text-transform: uppercase;
-}</code></pre>
-<div class="example text-demo">นี่คือตัวอย่างข้อความ</div>
-</section>
-
-<section>
-<h2>2. Background & Color</h2>
-<p>ใช้ปรับสีและพื้นหลัง:</p>
-<pre><code>div {
-background-color: teal;
-background-image: linear-gradient(90deg, teal, skyblue);
-color: white;
-}</code></pre>
-<div class="example bg-demo">พื้นหลังแบบไล่เฉดสี</div>
-</section>
-
-<section>
-<h2>3. Box Model</h2>
-<pre><code>div {
-margin: 10px;
-padding: 15px;
-border: 3px solid orange;
-box-sizing: border-box;
-}</code></pre>
-<div class="example box-demo">Box Model</div>
-</section>
-
-<section>
-<h2>4. Border</h2>
-<pre><code>div {
-border: 5px double purple;
-border-radius: 15px;
-}</code></pre>
-<div class="example border-demo">Border Example</div>
-</section>
-
-<section>
-<h2>5. Display & Position</h2>
-<pre><code>.box {
-position: absolute;
-top: 30px;
-right: 30px;
-}</code></pre>
-<div class="example pos-container">
-    <div class="pos-box"></div>
-</div>
-</section>
-
-<section>
-<h2>6. Flexbox</h2>
-<pre><code>.container {
-display: flex;
-justify-content: space-around;
-align-items: center;
-}</code></pre>
-<div class="example flex-demo">
-    <div class="flex-item">A</div>
-    <div class="flex-item">B</div>
-    <div class="flex-item">C</div>
-</div>
-</section>
-
-<section>
-<h2>7. Grid</h2>
-<pre><code>.grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 10px;
-}</code></pre>
-<div class="example grid-demo">
-    <div class="grid-item">1</div>
-    <div class="grid-item">2</div>
-    <div class="grid-item">3</div>
-</div>
-</section>
-
-<section>
-<h2>8. Shadow & Filter</h2>
-<pre><code>div {
-box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
-filter: brightness(1.2);
-}</code></pre>
-<div class="example shadow-demo">มีเงาและความสว่าง</div>
-</section>
-
-<section>
-<h2>9. Transition</h2>
-<pre><code>div {
-transition: all 0.4s ease;
-}
-div:hover {
-transform: scale(1.2);
-}</code></pre>
-<div class="example transition-demo">วางเมาส์ที่นี่</div>
-</section>
-
-<section>
-<h2>10. Animation</h2>
-<pre><code>@keyframes move {
-0% {transform: translateX(0);}
-50% {transform: translateX(80px);}
-100% {transform: translateX(0);}
-}
-
-div {
-animation: move 2s infinite;
-}</code></pre>
-<div class="example animation-demo">กำลังเคลื่อนที่</div>
-</section>
-
-<section>
-<h2>11. Overflow & Visibility</h2>
-<pre><code>div {
-overflow: auto;
-visibility: visible;
-}</code></pre>
-<div class="example overflow-box">
-    เนื้อหานี้ยาวเกินกล่อง ลองเลื่อนดูเพื่อเห็นผลว่า overflow ทำงานอย่างไร
-</div>
-</section>
-
-<section>
-<h2>12. Z-index</h2>
-<pre><code>.red {z-index: 1;}
-.blue {z-index: 2;}</code></pre>
-<div class="example zindex-container">
-    <div class="z1"></div>
-    <div class="z2"></div>
-</div>
-</section>
-
+<!-- CSS -->
+    <header class="CSS">
+            <h1>CSS</h1>
+        </header>
+        <div class="container1">
+            <article class="cssคืออะไร">
+                <ul>
+                    <li>CSS ย่อมาจาก Cascading Style Sheets</li>
+                    <li>CSS ใช้สำหรับตกแต่งเว็บไซต์</li>
+                    <li>CSS สามารถกำหนดสี, ฟอนต์, ขนาด, ระยะห่าง และอื่นๆ</li>
+                    <li>CSS สามารถทำให้เว็บไซต์ดูสวยงามและน่าสนใจมากขึ้น</li>
+                    <li>CSS สามารถทำให้เว็บไซต์ตอบสนองต่ออุปกรณ์ต่างๆ เช่น มือถือ แท็บเล็ต และคอมพิวเตอร์</li>
+                    <li>CSS สามารถทำให้เว็บไซต์โหลดเร็วขึ้นโดยการลดขนาดไฟล์ HTML</li>
+                    <li>CSS สามารถทำให้เว็บไซต์มีการจัดวางที่ดีขึ้นและง่ายต่อการอ่าน</li>
+                </ul>
+            </article>
+            <article class="การเชื่อม">
+<!-- การเชื่อม CSS -->
+                    <h1 class="hการเชื่อม">การเชื่อม HTML กับ CSS</h1>
+<!-- การเชื่อม HTML กับ CSS สามารถทำได้ 3 วิธี -->
+                    <p>การเชื่อม HTML กับ CSS สามารถทำได้ 3 วิธี</p>
+                    <p>Inline CSS คือ การใช้ CSS ในแท็กนั้น</p>
+                    <p>Internal CSS คือ การใช้ CSS ในแท็ก head</p>
+                    <p>External CSS คือการใช้ CSS แบบแยกไฟล์</p>
+            </article>
+        </div>
+<!-- ตัวอย่างการใช้ CSS -->
+        <div class="container2">
+            <header class="ตัวอย่างการใช้">
+                <h1>ตัวอย่างการใช้ CSS</h1>
+            </header>
+        </div>
+    <div class="container3">
+<!-- 1.inline CSS -->
+        <section class="inlineCSS">
+            <h2 class="hinlineCSS">1. Inline CSS</h2>
+            <p>
+                &lt;p style="color:blue; font-size:20px;"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นี่คือตัวอย่างการใช้ Inline CSS<br>
+                &lt;/p&gt;
+            </p>
+            <p style="color:blue; font-size:20px; border: solid; border-radius: 5px;">นี่คือตัวอย่างการใช้ Inline CSS</p>
+        </section>
+<!-- 2. Internal CSS -->
+        <section class="InternalCSS">
+            <h2 class="hInternalCSS">2. Internal CSS</h2>
+            <p>
+                &lt;style&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.internal-css {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: green;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 18px;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &lt;/style&gt;<br>
+                &lt;p class="internal-css"&gt;นี่คือตัวอย่างการใช้ Internal CSS&lt;/p&gt;
+            </p>
+        <style>
+            .internal-css {
+                color: green;
+                font-size: 18px;
+                border: solid;
+                border-radius: 5px;
+                text-align: center;
+            }
+        </style>
+            <p class="internal-css">นี่คือตัวอย่างการใช้ Internal CSS</p>
+        </section>
+<!-- 3. External CSS -->
+        <section class="ExternalCSS">
+            <h2 class="hExternalCSS">3. External CSS</h2>
+            <p class="external">
+                &lt;link rel="stylesheet" href="styles.css"&gt;<br>
+                &lt;p class="external-css"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;นี่คือตัวอย่างการใช้ External CSS<br>
+                &lt;/p&gt;
+            </p>
+        <link rel="stylesheet" href="styles.css">
+            <p class="external-css">นี่คือตัวอย่างการใช้ External CSS</p>
+        </section>
+    </div>
+<!-- CSS selector -->
+    <div class="container4">
+        <header class="hCSSselector">
+            <h1>CSS selector</h1>
+        </header>
+    </div>
+    <div class="container5">
+        <section class="CSSselectorคือ">
+            <p>CSS selector คือ ส่วนที่ใช้เลือกองค์ประกอบ HTML ที่ต้องการนำไปตกแต่งด้วย CSS</p>
+            <p>CSS selector มีหลายประเภท เช่น element selector, class selector, id selector, attribute selector และ pseudo-class selector</p>
+        </section>
+<!-- ตัวอย่าง CSS selector -->
+        <section class="ตัวอย่างCSSselector">
+            <div class="box1">
+                <h2 class="hตัวอย่างCSSselector">
+                    ตัวอย่าง CSS selector
+                </h2>
+            </div>
+                <ul>
+                    <li>Element selector: p { color: red; }</li>
+                    <li>Class selector: .class-name { font-size: 20px; }</li>
+                    <li>ID selector: #id-name { background-color: yellow; }</li>
+                    <li>Attribute selector: a[target="_blank"] { text-decoration: underline; }</li>
+                    <li>Pseudo-class selector: a:hover { color: green; }</li>
+                </ul>
+        </section>
+    </div>
+    <div class="universalselector">
+        <h1 class="huniversalselector">universal selector</h1>
+    </div>
+    <div class="container6">
+        <section class="universalselectorคือ">
+            <ul>
+                <li>universal selector คือ ตัวเลือกที่ใช้เลือกทุกองค์ประกอบในเอกสาร HTML</li>
+                <li>โดยใช้เครื่องหมายดอกจัน (*) เป็นตัวเลือก</li>
+                <li>มักใช้ในการรีเซ็ตสไตล์เริ่มต้นของเบราว์เซอร์</li>
+            </ul>
+        </section>
+        <section class="ตัวอย่างuniversalselecto">
+<!-- ตัวอย่าง universal selector -->
+            <div class="universalselectorตัวอย่าง">
+                <h2 class="huniversalselectorตัวอย่าง">ตัวอย่าง universal selector</h2>
+            </div>
+            <p>* { margin: 0; padding: 0; box-sizing: border-box; }(กดเอาคอมเมนท์ในตัวโค้ดก่อนเพื่อดูตัวอย่าง)</p>
+        <style>
+            /* * { margin: 0; padding: 0; box-sizing: border-box; } */
+        </style>
+        </section>
+    </div>
+<!-- CSS property -->
+        <h1 class="CSSproperty">CSS property</h1>
+<!-- property media query -->
+    <div class="container7">
+        <section class="propertymediaquery">
+            <div class="boxhpropertymediaquery">
+                <h2>property media query</h2>
+            </div>
+            <p>คือการจัดรูปแบบ style ตามรูปแบบของอุปกรณ์</p>
+            <p>@media (min-width:) and (max-width:){}</p>
+        <ul>
+            <li>320px-480px โทรศัพท์</li>
+            <li>481px-768px แท็บเล็ต</li>
+            <li>769px-1024px โน๊ตบุ๊ค</li>
+            <li>1025px-1200px คอม</li>
+            <li>1201 จอTV</li>
+        </ul>
+        </section>
+        <section class="propertyfont">
+<!-- property font -->
+        <div class="boxhpropertyfont">
+            <h2>property font</h2>
+        </div>
+<!-- ตัวอย่าง property font -->
+        <ul>
+            <li>font-family: กำหนดฟอนต์ที่ใช้ในข้อความ</li>
+            <li>font-size: กำหนดขนาดของฟอนต์</li>
+            <li>font-weight: กำหนดความหนาของฟอนต์ เช่น normal, bold, bolder, lighter หรือค่าตัวเลข 100-900</li>
+            <li>font-style: กำหนดลักษณะของฟอนต์ เช่น normal, italic หรือ oblique</li>
+            <li>text-align: กำหนดการจัดตำแหน่งข้อความ เช่น left, right, center หรือ justify</li>
+            <li>text-decoration: กำหนดการตกแต่งข้อความ เช่น none, underline, overline หรือ line-through</li>
+            <li>color: กำหนดสีของข้อความ</li>
+        </ul>
+        </section>
+        <section class="propertycolor">
+<!-- property color -->
+            <div class="boxhpropertycolor">
+                <h2>property color</h2>
+            </div>
+<!-- ตัวอย่าง property color -->
+            <ul>
+                <li>color: กำหนดสีของข้อความ</li>
+                <li>background-color: กำหนดสีพื้นหลังขององค์ประกอบ</li>
+                <li>border-color: กำหนดสีของเส้นขอบ</li>
+                <li>opacity: กำหนดความโปร่งใสขององค์ประกอบ โดยมีค่าอยู่ระหว่าง 0 (โปร่งใสเต็มที่) ถึง 1 (ทึบเต็มที่)</li>
+                <li>box-shadow: กำหนดเงาของกล่อง โดยสามารถกำหนดค่าต่างๆ เช่น ระยะห่าง, ความเบลอ, สี และอื่นๆ</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container8">
+        <section class="propertytext-align">
+<!-- property text-align -->
+                <h2 class="hpropertytext-align">property text-align</h2>
+<!-- ตัวอย่าง property text-align -->
+                <ul>
+                    <li>left: จัดข้อความชิดซ้าย</li>
+                    <li>right: จัดข้อความชิดขวา</li>
+                    <li>center: จัดข้อความให้อยู่กึ่งกลาง</li>
+                    <li>justify: จัดข้อความให้ชิดทั้งสองด้าน โดยการเพิ่มระยะห่างระหว่างคำ</li>
+                </ul>
+        </section>
+        <section class="propertywidth-hight">
+<!-- property width-hight -->
+            <h2 class="hpropertywidth-hight">
+                property width-hight
+            </h2>
+<!-- ตัวอย่าง property width-hight -->
+            <ul>
+                <li>width: กำหนดความกว้างขององค์ประกอบ เช่น 100px, 50%, auto</li>
+                <li>height: กำหนดความสูงขององค์ประกอบ เช่น 100px, 50%, auto</li>
+                <li>max-width: กำหนดความกว้างสูงสุดขององค์ประกอบ เช่น 100px, 50%, none</li>
+                <li>max-height: กำหนดความสูงสูงสุดขององค์ประกอบ เช่น 100px, 50%, none</li>
+                <li>min-width: กำหนดความกว้างต่ำสุดขององค์ประกอบ เช่น 100px, 50%, auto</li>
+                <li>min-height: กำหนดความสูงต่ำสุดขององค์ประกอบ เช่น 100px, 50%, auto</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container9">
+        <section class="propertyborder">
+<!-- property border -->
+            <h2 class="hpropertyborder">
+                property border
+            </h2>
+<!-- ตัวอย่าง property border -->
+            <ul>
+                <li>border-width: กำหนดความหนาของเส้นขอบ เช่น 1px, 0.5em, thin, medium, thick</li>
+                <li>border-style: กำหนดลักษณะของเส้นขอบ เช่น none, solid, dashed, dotted, double, groove, ridge, inset, outset</li>
+                <li>border-color: กำหนดสีของเส้นขอบ เช่น red, #ff0000, rgb(255,0,0)</li>
+                <li>border-radius: กำหนดความโค้งมนของมุมเส้นขอบ เช่น 5px, 50%, 1em</li>
+                <li>border: กำหนดเส้นขอบโดยรวมความหนา, ลักษณะ และสี เช่น 1px solid red</li>
+            </ul>
+        </section>
+        <section class="propertybox-model">
+<!-- property box-model -->
+            <h2 class="hpropertybox-model">
+                property box-model
+            </h2>
+<!-- ตัวอย่าง property box-model -->
+            <ul>
+                <li>margin: กำหนดระยะห่างภายนอกขององค์ประกอบ เช่น 10px, 1em, auto</li>
+                    <ul>
+                        <li>margin-top: กำหนดระยะห่างด้านบน</li>
+                        <li>margin-right: กำหนดระยะห่างด้านขวา</li>
+                        <li>margin-bottom: กำหนดระยะห่างด้านล่าง</li>
+                        <li>margin-left: กำหนดระยะห่างด้านซ้าย</li>
+                    </ul>
+                <li>padding: กำหนดระยะห่างภายในขององค์ประกอบ เช่น 10px, 1em, 0</li>
+                    <ul>
+                        <li>padding-top: กำหนดระยะห่างด้านบน</li>
+                        <li>padding-right: กำหนดระยะห่างด้านขวา</li>
+                        <li>padding-bottom: กำหนดระยะห่างด้านล่าง</li>
+                        <li>padding-left: กำหนดระยะห่างด้านซ้าย</li>
+                    </ul>
+                <li>border: กำหนดเส้นขอบขององค์ประกอบ โดยรวมความหนา, ลักษณะ และสี เช่น 1px solid red</li>
+                <li>box-sizing: กำหนดวิธีการคำนวณขนาดขององค์ประกอบ เช่น content-box (ค่าเริ่มต้น) หรือ border-box</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container10">
+        <section class="propertybackground">
+<!-- property background -->
+            <h2 class="hpropertybackground">
+                property background
+            </h2>
+<!-- ตัวอย่าง property background -->
+            <ul>
+                <li>background-color: กำหนดสีพื้นหลังขององค์ประกอบ เช่น red, #ff0000, rgb(255,0,0)</li>
+                <li>background-image: กำหนดภาพพื้นหลังขององค์ประกอบ เช่น url("image.jpg")</li>
+                <li>background-repeat: กำหนดการทำซ้ำของภาพพื้นหลัง เช่น repeat (ค่าเริ่มต้น), no-repeat, repeat-x, repeat-y</li>
+                <li>background-size: กำหนดขนาดของภาพพื้นหลัง เช่น auto (ค่าเริ่มต้น), cover, contain หรือกำหนดขนาดเป็น px หรือ %</li>
+                <li>background-position: กำหนดตำแหน่งของภาพพื้นหลัง เช่น left top (ค่าเริ่มต้น), center center, right bottom หรือกำหนดเป็น px หรือ %</li>
+                <li>background-attachment: กำหนดการเลื่อนของภาพพื้นหลัง เช่น scroll (ค่าเริ่มต้น) หรือ fixed</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container11">
+        <section class="propertyfloat">
+<!-- property float -->
+            <h2 class="hpropertyfloat">
+                property float(การลอยของ element แบบเว็บพนัน)
+            </h2>
+<!-- ตัวอย่าง property float -->
+            <ul>
+                <li>float: กำหนดให้องค์ประกอบลอยซ้ายหรือขวา เช่น left, right หรือ none (ค่าเริ่มต้น)</li>
+                <li>clear: กำหนดการหยุดการลอยขององค์ประกอบ เช่น left, right, both หรือ none (ค่าเริ่มต้น)</li>
+            </ul>
+        </section>
+        <section class="propertylink">
+<!-- property link -->
+            <h2 class="hpropertylink">
+                property link
+            </h2>
+<!-- text-decoretion -->
+            <p>ถ้าต้องการเอาเส้นใต้ของลิ้งออกให้ใช้ text-decoretion: none;</p>
+<!-- link -->
+            <ul>
+                <li>a:link style เริ่มต้น</li>
+                <li>a:hover style หลังจากที่กดไปแล้ว</li>
+                <li>a:visited style หลังจากที่เมาส์วาง</li>
+                <li>a:active style ขณะที่กดลิงค์</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container12">
+        <section class="propertyposition">
+<!-- proerty  position -->
+            <h2 class="hpropertyposition">property position</h2>
+<!-- position คืออะไร -->
+            <p>คือ กำหนดวิธีการจัดวางองค์ประกอบ เช่น</p>
+<!-- ตัวอย่าง property position -->
+            <ul>
+                <li>position: กำหนดวิธีการจัดวางองค์ประกอบ เช่น</li>
+                <ul>
+                    <li>static จัดวางค่าเริ่มต้น</li>
+                    <li>relative ใช้ในการจัดวางและกำหนดตำแหน่งวัตถุโดยการนับจากจุดที่วัตถุนั้นๆอยู่</li>
+                    <li>absolute ใช้ในการจัดวางและกำหนดตำแหน่งวัตถุโดยการนับจากจุดที่อยู่ใกล้ที่สุดที่มีการกำหนด position เป็น</li>
+                    <ul>
+                        <li>fiixde (ใช้ในการจัดวางวัตถุให้อยู่ตำแหน่งเดิม)</li>
+                        <li>sticky (ให้วัตถุติดขอบเมื่อเลื่อนไปถึง)</li>
+                </ul>
+                <li>top: กำหนดระยะห่างจากด้านบนขององค์ประกอบเมื่อใช้ position ที่ไม่ใช่ static</li>
+                <li>right: กำหนดระยะห่างจากด้านขวาขององค์ประกอบเมื่อใช้ position ที่ไม่ใช่ static</li>
+                <li>bottom: กำหนดระยะห่างจากด้านล่างขององค์ประกอบเมื่อใช้ position ที่ไม่ใช่ static</li>
+                <li>left: กำหนดระยะห่างจากด้านซ้ายขององค์ประกอบเมื่อใช้ position ที่ไม่ใช่ static</li>
+                <li>z-index: กำหนดลำดับชั้นขององค์ประกอบเมื่อมีการซ้อนทับกัน โดยมีค่าเป็นจำนวนเต็มที่มากกว่าจะอยู่ด้านบน</li>
+            </ul>
+        </section>
+        <section class="propertyz-index">
+<!-- property z-index -->
+            <h2 class="hpropertyz-index">property z-index</h2>
+<!-- z-index คืออะไร -->
+            <p>คือ การกำหนดลำดับชั้นขององค์ประกอบเมื่อมีการซ้อนทับกัน</p>
+<!-- value z-index -->
+            <ul>
+                <li>มีค่าเป็นจำนวนเต็มที่มากกว่าจะอยู่ด้านบน</li>
+                <li>ค่าเริ่มต้นคือ auto ซึ่งหมายความว่าองค์ประกอบจะถูกจัดวางตามลำดับในเอกสาร HTML</li>
+                <li>ต้องใช้ร่วมกับ position ที่ไม่ใช่ static (เช่น relative, absolute, fixed, sticky)</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container13">
+        <section class="propertyvisibility">
+<!-- property visibility -->
+            <h2 class="hpropertyvisibility">property visibility</h2>
+<!-- visibility คืออะไร -->
+            <p>คือ กำหนดการมองเห็นขององค์ประกอบ เช่น</p>
+            <ul>
+                <li>visible (ค่าเริ่มต้น)</li>
+                <li>hidden (ซ่อนวัตถุ)</li>
+                <li>collapse (ซ่อนวัตถุและไม่ใช้พื้นที่)</li>
+            </ul>
+        </section>
+        <section class="propertyimportant">
+<!-- property important -->
+            <h2 class="hpropertyimportant">property !important</h2>
+<!-- important คืออะไร -->
+            <ul>
+                <li>คือ การเพิ่มความสำคัญให้กับกฎ CSS ที่กำหนดไว้ โดยใช้คำว่า !important ต่อท้ายค่าของคุณสมบัติ</li>
+                <li>เมื่อมีการใช้ !important กับกฎ CSS จะทำให้กฎนั้นมีความสำคัญสูงสุดและจะถูกนำไปใช้แทนที่กฎอื่นๆ ที่อาจขัดแย้งกัน</li>
+                <li>ควรใช้ !important อย่างระมัดระวังและในกรณีที่จำเป็นเท่านั้น เนื่องจากอาจทำให้การจัดการสไตล์ของเว็บไซต์ซับซ้อนขึ้นและยากต่อการบำรุงรักษา</li>
+            </ul>
+        </section>
+        <section class="propertyoverflow">
+<!-- property overflow -->
+            <h2 class="hpropertyoverflow">property overflow</h2>
+<!-- overflow คืออะไร -->
+            <p>คือ การกำหนดวิธีการจัดการกับเนื้อหาที่เกินขนาดของกล่องที่กำหนดไว้</p>
+<!-- value overflow -->
+            <ul>
+                <li>visible (ค่าเริ่มต้น): เนื้อหาที่เกินขนาดของกล่องจะแสดงออกมา</li>
+                <li>hidden: เนื้อหาที่เกินขนาดของกล่องจะถูกซ่อน</li>
+                <li>scroll: เพิ่มแถบเลื่อน (scrollbar) เพื่อให้สามารถเลื่อนดูเนื้อหาที่เกินขนาดได้</li>
+                <ul>
+                    <li>overflow:scroll</li>
+                    <li>overflow-x:scroll (เพิ่มแถบเลื่อนแนวนอน)</li>
+                    <li>overflow-y:scroll (เพิ่มแถบเลื่อนแนวตั้ง)</li>
+                </ul>
+                <li>auto: เพิ่มแถบเลื่อนเมื่อเนื้อหาที่เกินขนาดของกล่อง</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container14">
+        <section class="propertycursor-style">
+<!-- property cursor style -->
+            <h2 class="hpropertycursor-style">property cursor style</h2>
+<!-- cursor style คืออะไร -->
+            <p>คือ การกำหนดลักษณะของเคอร์เซอร์เมื่อวางเมาส์เหนือองค์ประกอบ</p>
+<!-- value cursor style -->
+            <ul>
+                <li>default: เคอร์เซอร์รูปลูกศรปกติ (ค่าเริ่มต้น)</li>
+                <li>pointer: เคอร์เซอร์รูปมือชี้ ใช้สำหรับลิงก์หรือปุ่มที่สามารถคลิกได้</li>
+                <li>text: เคอร์เซอร์รูปตัว I ใช้สำหรับข้อความที่สามารถแก้ไขได้</li>
+                <li>move: เคอร์เซอร์รูปสี่ทิศทาง ใช้สำหรับการลากวัตถุ</li>
+                <li>not-allowed: เคอร์เซอร์รูปวงกลมมีเส้นทแยง ใช้สำหรับวัตถุที่ไม่สามารถใช้งานได้</li>
+                <li>crosshair: เคอร์เซอร์รูปกากบาท ใช้สำหรับการเลือกพื้นที่</li>
+            </ul>
+        </section>
+        <section class="propertybox-shadow">
+<!-- property box-shadow -->
+            <h2 class="hpropertybox-shadow">property box-shadow</h2>
+<!-- box-shadow คืออะไร -->
+            <p>คือ การเพิ่มเงาให้กับกล่องขององค์ประกอบ</p>
+<!-- value box-shadow -->
+            <ul>
+                <li>box-shadow: กำหนดเงาของกล่อง โดยสามารถกำหนดค่าต่างๆ เช่น ระยะห่าง, ความเบลอ, สี และอื่นๆ</li>
+                <li>box-shadow: x(+ขวา,-ซ้าย) y(+บน,-ล่าง) blur(ความเลอ) spreaad(ขนาดของเงา) color(สี)</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container15">
+        <section class="propertyopecity">
+<!-- property opecity -->
+            <h2 class="hpropertyopecity">property opecity</h2>
+<!-- opecity คืออะไร -->
+            <p>คือการกำหนดค่าความทึบ</p>
+<!-- ตัวอย่าง value opecity -->
+            <ul>
+                <li>ค่าอยู่ระหว่าง 0.0-0.1</li>
+                <li>ยิ่งค่าน้อย ยิ่งจาง</li>
+                <li>ยิ่งค่ามาก ยิ่งทึบ</li>
+            </ul>
+        </section>
+        <section class="propertydisplay">
+<!-- property display -->
+            <h2 class="hpropertydisplay">property display</h2>
+<!-- display คืออะไร -->
+            <p>คือเครื่องในการจัดการ element ต่างๆในหน้าเว็บทำงาน</p>
+<!-- property display -->
+            <ul>
+                <li>display: กำหนดลักษณะการแสดงผลขององค์ประกอบ เช่น, none</li>
+                    <ul>
+                        <li>flex การจัด element ในแนวนอน</li>
+                        <li>inline</li>
+                        <li>block</li>
+                        <li>inline-block</li>
+                        <li>none</li>
+                    </ul>
+                <li>visibility: กำหนดการมองเห็นขององค์ประกอบ เช่น visible (ค่าเริ่มต้น), hidden, collapse</li>
+            </ul>
+        </section>
+        <section class="propertyflex-direction">
+<!-- property flex-direction -->
+            <h2 class="hpropertyflex-direction">property flex-direction</h2>
+<!-- flex-direction คืออะไร -->
+            <p>ใช้ในการกำหนดทิศทางของ element</p>
+<!-- value flex-direction -->
+            <ul>
+                <li>row ค่าเริ่มต้น</li>
+                <li>colimn จัดว่าง element ในแนวตั้ง</li>
+                <li>row-reverse จัดวาง element ในแนวนอนแบบตรงข้าม</li>
+                <li>colimn-reverse จัดวาง element ในตั้งนอนแบบตรงข้าม</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container16">
+        <section class="propertyflex-wrap">
+<!-- property flex-wrap -->
+            <h2 class="hpropertyflex-wrap">property flex-wrap</h2>
+<!-- flex-wrap คืออะไร​-->
+            <p>คือการจัด element ที่เกินออกจาก คอนเทนเนอร์ให้อยู่ในคอนเทน์เนอร์</p>
+<!-- Value​ flex-wrap​ -->
+            <ul>
+                <li>nowrap ค่าเริ่มต้น</li>
+                <li>wrap จัดวาง element ที่เกินพื้นที่ให้อยู่ในพื้นที่จากบนลงล่าง</li>
+                <li>wrap-reverse จัดวาง element ที่เกินพื้นที่ให้อยู่ในพื้นที่จากล่างขึ้นบน</li>
+            </ul>
+        </section>
+        <section class="propertyflex-properties">
+<!-- property flex-properties -->
+            <h2 class="hpropertyflex-properties">property flex-properties</h2>
+<!-- flex-properties คืออะไร -->
+            <p>คือการจัด element ให้มีขนาดตามที่กำหนด</p>
+<!-- value flex-properties​-->
+            <ul>
+                <li>flex-shrink ทำให้ element หดตัวเมื่อเทียยบกับ element อื่น ค่าเริ่มต้น 1</li>
+                <li>flex-grow ทำให้ element ขยายตัวเมื่อเทียบกับ element อื่น ค่าเริ่มต้น 0</li>
+                <li>flex-basis กำหนดค่ายืดหยุ่นเริ่มต้น</li>
+                <li>flex:1 ทำให้ element ที่อยู่ในแถวเดียวกันมีขนาดเท่ากัน</li>
+            </ul>
+        </section>
+        <section class="propertyjustify-content">
+<!-- property justify-content -->
+            <h2 class="hpropertyjustify-content">property justify-content</h2>
+<!-- justify-content คืออะไร -->
+            <p>จัดวางตำแหน่งของ element</p>
+<!-- value justify-content -->
+            <ul>
+                <li>flex-start ชิดซ้าย container ทิศตามแนวนอน</li>
+                <li>center กึ่งกลาง container ทิศตามแนวนอน</li>
+                <li>flex-end ชิดขวา container ทิศตามแนวนอน</li>
+                <li>space-around ระยะห่างซ้ายขวาและ element เท่ากัน</li>
+                <li>space-between ระยะห่างซ้ายขวาและ element เท่ากัน (ติดมุม)</li>
+            </ul>
+        </section>
+    </div>
+    <div class="container17">
+        <section class="propertyflex-alignment">
+<!-- property flex-alignment -->
+            <h2 class="hpropertyflex-alignment">flex-alignment</h2>
+<!-- flex-alignment ใช้ยังไง -->
+            <p>align-item (element ทุกตัว) และ align-self (element ที่ต้องการ)</p>
+<!-- value flex-alignment -->
+            <ul>
+                <li>stretch กำหนด element เท่ากับขนาด container</li>
+                <li>flex-start ชิดซ้าย container ทิศตามแนวนอน</li>
+                <li>center กึ่งกลาง container ทิศตามแนวนอน</li>
+                <li>flex-end ชิดขวา container ทิศตามแนวนอน</li>
+            </ul>
+        </section>
+        <section class="propertygrid-layout">
+<!-- property grid layout -->
+            <h2 class="hpropertygrid-layout">property grid layout</h2>
+<!-- วิธีใช้ property grid layout -->
+            <ul>
+                <li>display: grid; การใช้งาน</li>
+                <li>grid-template-row:(จำนวนแถว,ขนาด)</li>
+                <li>grid-template-columns:(จำนวนคอลัมน์,ขนาด)</li>
+            </ul>
+        </section>
+        <section class="propertytext-shadow">
+<!-- property text-shadow -->
+            <h2 class="hpropertytext-shadow">property text-shadow</h2>
+<!-- text-shadow คืออะไร -->
+            <p>กำหนดเงาข้อความ</p>
+            <p>text-shadow: x y blur color</p>
+<!-- value text-shadow -->
+            <ul>
+                <li>x คือ เงาแกน x (+ขวา,-ซ้าย)</li>
+                <li>y คือ เงาแกน y (+บน,-ล่าง)</li>
+                <li>blur คือ ความชัดของเงา</li>
+                <li>color คือ สีของเงา</li>
+            </ul>
+        </section>  
+    </div>
+    <div class="container18">
+        <section class="propertytranform">
+<!-- property tranform -->
+            <h2 class="hpropertytranform">property tranform</h2>
+<!-- tranform คืออะไร -->
+            <p>คือการจัด ตำแหน่ง,ขนาด,การหมุด,การเอียง โดยใช้ tranform</p>
+<!-- value tranform -->
+            <ul>
+                <li>translate(x,y) กำหนดตำแหน่ง element</li>
+                <li>scale(x,y) ขยาย element</li>
+                <li>rotate(มุม deg) กำหนดการหมุนของ element</li>
+                <li>skewX(มุม deg)กำหนดการเอียงของ element แกน x</li>
+                <li>skewY(มุม deg)กำหนดการเอียงของ element แกน y</li>
+            </ul>
+        </section>
+        <section class="propertytransition">
+<!-- property transition -->
+            <h2 class="hpropertytransition">property transition</h2>
+<!-- transition คืออะไร -->
+            <p>คือการเปลี่ยนค่าใน element จากค่านึงไปสู่ค่านึงในช่วงเวลาที่กำหนด</p>
+            <p>transition: properties duration time-fuction delay;</p>
+<!-- value transition -->
+            <ul>
+                <li>properties คือ property นั้น</li>
+                <li>duration คือ ระยะในการเปลี่ยนค่า</li>
+                <li>time-fuction คือ รูปแบบฟังก์ชั่นของการเปลี่ยนแปลง มีค่าปกติเป็น ease-in</li>
+                <li>delay คือ ระยะเวลาที่จะเริ่มเปลี่ยน</li>
+            </ul>
+        </section>
+        <section class="propertyanimetion">
+<!-- property animetion -->
+            <h2 class="hpropertyanimetion">property animetion</h2>
+            <p>ใช้ร่วมกับ @keyframes name animetion</p>
+<!-- value animetion -->
+            <ul>
+                <li>animetion-name คือ ตั้งชื่ออนิเมชั่น</li>
+                <li>animetion-duration คือ ระยะเวลาของอนิเมชั่นจากเริ่มต้นไปสิ้นสุด</li>
+                <li>animetion-time-fuction คือ รูปแบบการเล่นอนิเมชั่น</li>
+                <li>animetion-iteration-count คือ จำนวนการเล่นอนิเมชั่น (infinite ไม่สิ้นสุด)</li>
+                <li>animetion--diraction คือ ทิศทางการเล่น(เล่นจากเฟรม 1 ไปถึง เฟรมที่ 10 หรือแบบย้อนกลับก็ได้)</li>
+                <li>animetion-delay คือ ระยะเวลาที่จะเริ่ม</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
