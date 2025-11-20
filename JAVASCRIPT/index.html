@@ -9,45 +9,89 @@
     body {
         background-color:bisque;
     }
+    #box {
+        margin: auto;
+        width: 700px;
+        border: solid black;
+        padding-bottom: 20px;
+        background-color: wheat;
+    }
+    #boxh1 {
+        display: flex;
+        justify-content: center;
+    }
     #h1 {
+        background-color: burlywood;
+        text-align: center;
+        padding: 10px;
+        width: 450px;
+        border: solid black;
+    }
+    * a {
+        text-decoration: none;
+        color: black;
+    }
+    .HTML, .CSS, .JavaScript {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    a[href="html learn.html"]{
+        background-color:darkgrey ;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        width: 100px;
+        margin: 20px;
+    }
+    a[href="html learn.html"]:hover {
+        color: white;
+        background-color: orange;
+        border-radius: 10px;
+        border: solid black;
+        padding: 20px;
+    }
+    a[href="css learn.html"]{
+        background-color:darkgrey ;
+        border-radius: 10px;
+        padding: 20px;
+        width: 100px;
         text-align: center;
     }
-    #html {
-        margin-left: 552px;
-        padding: 10px;
-        color: black;
-        background-color: #e34c26; /* สีส้มของ HTML */
+    a[href="css learn.html"]:hover {
+        color: white;
+        background-color:rgb(46, 137, 227) ;
+        border-radius: 10px;
+        border: solid black;
+        padding: 20px;
     }
-    #css {
-        margin-left: 561px;
-        padding: 10px;
-        color: black;
-        background-color:cyan; /* สีน้ำเงินของ CSS */
+    a[href="javascript learn.html"]{
+        background-color:darkgrey ;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
     }
-    #javascript {
-        margin-left: 540px;
-        padding: 10px;
-        background-color: #f0db4f; /* สีเหลืองของ JavaScript */
-        color: black; /* เปลี่ยนสีข้อความเป็นดำเพื่อความชัดเจน */
+    a[href="javascript learn.html"]:hover {
+        background-color: yellow;
+        border-radius: 10px;
+        border: solid black;
+        padding: 20px;
     }
 </style>
 <body>
-    <span id="h1"><h1>เลือกเนื้อหาที่ท่านต้องการ</h1></span>
-    <p>
-        <span id="html">
-            <a href="html learn.html">HTML BASIC</a>
-        </span>
-    </p>
-    <p>
-        <span id="css">
-            <a href="css learn (test).html">CSS BASIC</a>
-        </span>
-    </p>
-    <p>
-        <spen id="javascript">
-            <a href="javascript learn.html">JavaScript BASIC</a>
-        </spen>
-    </p>
-
+    <div id="box">
+        <div id="boxh1">
+            <h1 id="h1">เลือกเนื้อหาที่ท่านต้องการ</h1>
+        </div>
+        <div class="HTML">
+            <h2 class="hHTML"><a href="html learn.html">HTML</a></h2>
+        </div>
+        <div class="CSS">
+            <h2 class="hCSS"><a href="css learn.html">CSS</a></h2>
+        </div>
+        <div class="JavaScript">
+            <h2 class="hJavaScript"><a href="javascript learn.html">Java Script</a></h2>
+        </div>
+    </div>
 </body>
 </html>
