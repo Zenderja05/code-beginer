@@ -103,3 +103,82 @@ function square(num) {
 let result = square(4);
 console.log(result); // แสดงผล 16
 // ----------------------------------------------------------------------------------------------------------------------------------
+// array properties & function
+let colors = ["Red", "Green", "Blue"];
+// length property
+console.log(colors.length); // แสดงผล 3
+// push() function
+colors.push("Yellow");
+console.log(colors); // แสดงผล ["Red", "Green", "Blue", "Yellow"]
+// pop() function
+colors.pop();
+console.log(colors); // แสดงผล ["Red", "Green", "Blue"]
+// shift() function
+colors.shift();
+console.log(colors); // แสดงผล ["Green", "Blue"]
+// unshift() function
+colors.unshift("Purple");
+console.log(colors); // แสดงผล ["Purple", "Green", "Blue"]
+// indexOf() function
+console.log(colors.indexOf("Green")); // แสดงผล 1
+// ----------------------------------------------------------------------------------------------------------------------------------
+// เข้าถึงอาเรย์แบบวนลูป
+let numbers = [10, 20, 30, 40, 50];
+for (let i = 0; i < numbers.length; i++) {
+    console.log(numbers[i]);
+}
+// เข้าถึงสมาชิกarrayด้วย forech
+numbers.forEach(function(number) {
+    console.log(number);
+});
+// ----------------------------------------------------------------------------------------------------------------------------------
+// การแปลงอาเรย์ให้เป็น string
+// to string
+let fruits2 = ["Mango", "Pineapple", "Grapes"];
+console.log(fruits2.toString());
+// join
+console.log(fruits2.join(" - "));
+// ----------------------------------------------------------------------------------------------------------------------------------
+// การเพิ่ม ลบ แก้ไข อาเรย์
+let veggies = ["Carrot", "Potato", "Cucumber"];
+// การเพิ่มสมาชิกอาเรย์
+veggies.push("Lettuce");
+console.log(veggies);
+// การลบสมาชิกอาเรย์
+veggies.pop();
+console.log(veggies);
+// การแก้ไขสมาชิกอาเรย์
+veggies[1] = "Tomato";
+console.log(veggies);
+// ----------------------------------------------------------------------------------------------------------------------------------
+// การรวมอาเรย์
+let array1 = [1, 2, 3];
+let array2 = [4, 5, 6];
+let combinedArray = array1.concat(array2);
+console.log(combinedArray); // แสดงผล [1, 2, 3, 4, 5, 6]
+// ----------------------------------------------------------------------------------------------------------------------------------
+// การเรียงลำดับสมาชิกอาเรย์
+// เรียงแบบจากน้อยไปมาก
+let unsortedArray = [3, 1, 4, 2, 5];
+unsortedArray.sort(function(a, b) {
+    return a - b;
+});
+console.log(unsortedArray); // แสดงผล [1, 2, 3, 4, 5]
+// เรียงแบบจากมากไปน้อย
+unsortedArray.sort(function(a, b) {
+    return b - a;
+});
+console.log(unsortedArray); // แสดงผล [5, 4, 3, 2, 1]
+// ----------------------------------------------------------------------------------------------------------------------------------
+// javascript object
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    greet: function() {
+        console.log("Hello, " + this.firstName + " " + this.lastName);
+    }
+};
+console.log(person.firstName); // แสดงผล "John"
+person.greet(); // แสดงผล "Hello, John Doe"
+// ----------------------------------------------------------------------------------------------------------------------------------

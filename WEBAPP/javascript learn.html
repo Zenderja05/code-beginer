@@ -145,12 +145,179 @@
         <li><strong>การประกาศฟังก์ชั่น:</strong> ใช้คำสั่ง <code>function</code> ตามด้วยชื่อฟังก์ชั่นและวงเล็บ เช่น
             <pre><code>function greet(name) {
     return "Hello, " + name + "!";
-}</code></pre>
+    }</code></pre>
         </li>
         <li><strong>การเรียกใช้งานฟังก์ชั่น:</strong> ใช้วงเล็บหลังชื่อฟังก์ชั่นพร้อมกับส่งค่าพารามิเตอร์ เช่น
             <pre><code>let message = greet("John");
-console.log(message); // Output: Hello, John!</code></pre>
+    console.log(message); // Output: Hello, John!</code></pre>
         </li>
     </ul>
+<!-- ขอบเขตตัวแปร -->
+    <h2>ขอบเขตตัวแปร</h2>
+    <p>ขอบเขตตัวแปร (Variable Scope) ใน JavaScript หมายถึงบริเวณที่ตัวแปรสามารถเข้าถึงและใช้งานได้ ขอบเขตตัวแปรมีสองประเภทหลัก ๆ ดังนี้:</p>
+    <ul>
+        <li><strong>ขอบเขตแบบฟังก์ชั่น (Function Scope):</strong> ตัวแปรที่ประกาศด้วยคำสั่ง <code>var</code> จะมีขอบเขตภายในฟังก์ชั่นที่มันถูกประกาศเท่านั้น ซึ่งหมายความว่าตัวแปรนั้นไม่สามารถเข้าถึงได้จากภายนอกฟังก์ชั่น</li>
+        <li><strong>ขอบเขตแบบบล็อก (Block Scope):</strong> ตัวแปรที่ประกาศด้วยคำสั่ง <code>let</code> หรือ <code>const</code> จะมีขอบเขตภายในบล็อกของโค้ดที่มันถูกประกาศ เช่น ภายในวงเล็บปีกกา {} ของคำสั่ง if, for, while เป็นต้น ซึ่งหมายความว่าตัวแปรนั้นไม่สามารถเข้าถึงได้จากภายนอกบล็อกนั้น</li>
+    </ul>
+    array properties & function
+    <h2>คุณสมบัติและฟังก์ชั่นของอาร์เรย์</h2>
+    <p>อาร์เรย์ (Array) ใน JavaScript เป็นโครงสร้างข้อมูลที่ใช้เก็บชุดของค่าหลายค่าในตัวแปรเดียว อาร์เรย์มีคุณสมบัติและฟังก์ชั่นหลายอย่างที่ช่วยให้เราสามารถจัดการกับข้อมูลในอาร์เรย์ได้อย่างง่ายดาย ดังนี้:</p>
+    <ul>
+        <li><strong>length:</strong> คุณสมบัติที่ใช้ในการตรวจสอบจำนวนสมาชิกในอาร์เรย์ เช่น
+            <pre><code>let fruits = ["Apple", "Banana", "Cherry"];
+    console.log(fruits.length); // Output: 3</code></pre>
+        </li>
+        <li><strong>push():</strong> ฟังก์ชั่นที่ใช้เพิ่มสมาชิกใหม่เข้าไปในอาร์เรย์ที่ตำแหน่งสุดท้าย เช่น
+            <pre><code>fruits.push("Orange");
+    console.log(fruits); // Output: ["Apple", "Banana", "Cherry", "Orange"]</code></pre>
+        </li>
+        <li><strong>pop():</strong> ฟังก์ชั่นที่ใช้ลบสมาชิกตัวสุดท้ายออกจากอาร์เรย์ และคืนค่าของสมาชิกที่ถูกลบ เช่น
+            <pre><code>let lastFruit = fruits.pop();
+    console.log(lastFruit); // Output: "Orange"
+    console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]</code></pre>
+        </li>
+        <li><strong>shift():</strong> ฟังก์ชั่นที่ใช้ลบสมาชิกตัวแรกออกจากอาร์เรย์ และคืนค่าของสมาชิกที่ถูกลบ เช่น
+            <pre><code>let firstFruit = fruits.shift();
+    console.log(firstFruit); // Output: "Apple"
+    console.log(fruits); // Output: ["Banana", "Cherry"]</code></pre>
+        </li>
+        <li><strong>unshift():</strong> ฟังก์ชั่นที่ใช้เพิ่มสมาชิกใหม่เข้าไปในอาร์เรย์ที่ตำแหน่งแรก เช่น
+            <pre><code>fruits.unshift("Mango");
+    console.log(fruits); // Output: ["Mango", "Banana", "Cherry"]</code></pre>
+        </li>
+        <li><strong>indexOf():</strong> ฟังก์ชั่นที่ใช้ค้นหาตำแหน่งของสมาชิกในอาร์เรย์ และคืนค่าตำแหน่งนั้น หากไม่พบจะคืนค่า -1 เช่น
+            <pre><code>let position = fruits.indexOf("Banana");
+    console.log(position); // Output: 1</code></pre>
+        </li>
+    </ul>
+<!-- เข้าถึงสมาชิกarrayด้วยloop -->
+    <h2>การเข้าถึงสมาชิกของอาร์เรย์ด้วยลูป</h2>
+    <p>เราสามารถใช้ลูปในการเข้าถึงและประมวลผลสมาชิกของอาร์เรย์ได้อย่างง่ายดาย ตัวอย่างเช่น การใช้ลูป for เพื่อแสดงค่าของสมาชิกในอาร์เรย์:</p>
+    <pre><code>let fruits = ["Apple", "Banana", "Cherry"];
+    for (let i = 0; i &lt; fruits.length; i++) {
+    console.log(fruits[i]);
+    }</code></pre>
+    <p>ผลลัพธ์ที่ได้จะเป็น:</p>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+<!-- เข้าถึงสมาชิกarrayด้วย forech -->
+    <h2>การเข้าถึงสมาชิกของอาร์เรย์ด้วย forEach</h2>
+    <p>นอกจากการใช้ลูป for เรายังสามารถใช้เมธอด <code>forEach()</code> เพื่อเข้าถึงและประมวลผลสมาชิกของอาร์เรย์ได้อย่างง่ายดาย ตัวอย่างเช่น:</p>
+    <pre><code>let fruits = ["Apple", "Banana", "Cherry"];
+    fruits.forEach(function(fruit) {
+    console.log(fruit);
+    });
+</code></pre>
+    <p>ผลลัพธ์ที่ได้จะเป็น:</p>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+<!-- การแปลงอาเรย์ให้เป็น string -->
+    <h2>การแปลงอาร์เรย์ให้เป็นสตริง</h2>
+    <p>ใน JavaScript เราสามารถแปลงอาร์เรย์ให้เป็นสตริงได้โดยใช้เมธอด <code>toString()</code> หรือ <code>join()</code> ดังนี้:</p>
+    <ul>
+        <li><strong>toString():</strong> เมธอดนี้จะแปลงอาร์เรย์ทั้งหมดเป็นสตริง โดยคั่นด้วยเครื่องหมายจุลภาค (comma) เช่น
+            <pre><code>let fruits = ["Apple", "Banana", "Cherry"];
+    console.log(fruits.toString()); // Output: "Apple,Banana,Cherry"</code></pre>
+        </li>
+        <li><strong>join():</strong> เมธอดนี้จะแปลงอาร์เรย์ทั้งหมดเป็นสตริง โดยคั่นด้วยตัวคั่นที่เรากำหนด เช่น
+            <pre><code>console.log(fruits.join(" - ")); // Output: "Apple - Banana - Cherry"</code></pre>
+        </li>
+    </ul>
+<!-- การเพิ่ม ลบ แก้ไข อาเรย์ -->
+    <h2>การเพิ่ม ลบ แก้ไข อาร์เรย์</h2>
+    <p>ใน JavaScript เราสามารถเพิ่ม ลบ หรือแก้ไขสมาชิกในอาร์เรย์ได้อย่างง่ายดาย ดังนี้:</p>
+    <ul>
+        <li><strong>การเพิ่มสมาชิก:</strong> ใช้เมธอด <code>push()</code> เพื่อเพิ่มสมาชิกที่ตำแหน่งสุดท้าย หรือ <code>unshift()</code> เพื่อเพิ่มสมาชิกที่ตำแหน่งแรก เช่น
+            <pre><code>let fruits = ["Apple", "Banana"];
+    fruits.push("Cherry"); // เพิ่มที่ท้าย
+    fruits.unshift("Mango"); // เพิ่มที่หน้า
+    console.log(fruits); // Output: ["Mango", "Apple", "Banana", "Cherry"]</code></pre>
+        </li>
+        <li><strong>การลบสมาชิก:</strong> ใช้เมธอด <code>pop()</code> เพื่อลบสมาชิกที่ตำแหน่งสุดท้าย หรือ <code>shift()</code> เพื่อลบสมาชิกที่ตำแหน่งแรก เช่น
+            <pre><code>fruits.pop(); // ลบที่ท้าย
+    fruits.shift(); // ลบที่หน้า
+    console.log(fruits); // Output: ["Apple", "Banana"]</code></pre>
+        </li>
+        <li><strong>การแก้ไขสมาชิก:</strong> สามารถแก้ไขสมาชิกในอาร์เรย์ได้โดยการเข้าถึงตำแหน่งของสมาชิกนั้นและกำหนดค่าใหม่ เช่น
+            <pre><code>fruits[0] = "Grapes"; // แก้ไขสมาชิกที่ตำแหน่ง 0
+    console.log(fruits); // Output: ["Grapes", "Banana"]</code></pre>
+        </li>
+    </ul>
+<!-- การรวมอาเรย์ -->
+    <h2>การรวมอาร์เรย์</h2>
+    <p>ใน JavaScript เราสามารถรวมอาร์เรย์สองตัวขึ้นไปเป็นอาร์เรย์เดียวได้โดยใช้เมธอด <code>concat()</code> ดังนี้:</p>
+    <pre><code>let array1 = [1, 2, 3];
+    let array2 = [4, 5, 6];
+    let combinedArray = array1.concat(array2);
+    console.log(combinedArray); // Output: [1, 2, 3, 4, 5, 6]</code></pre>
+<!-- การเรียงลำดับสมาชิกอาเรย์ -->
+    <h2>การเรียงลำดับสมาชิกอาร์เรย์</h2>
+    <p>ใน JavaScript เราสามารถเรียงลำดับสมาชิกในอาร์เรย์ได้โดยใช้เมธอด <code>sort()</code> ดังนี้:</p>
+    <pre><code>let fruits = ["Banana", "Apple", "Cherry"];
+    fruits.sort();
+    console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]</code></pre>
+        <p>นอกจากนี้ เรายังสามารถใช้ฟังก์ชั่นเปรียบเทียบเพื่อกำหนดลำดับการเรียงลำดับได้ เช่น การเรียงลำดับตัวเลขจากน้อยไปมาก:</p>
+        <pre><code>let numbers = [40, 100, 1, 5, 25, 10];
+    numbers.sort(function(a, b) {
+        return a - b;
+    });
+    console.log(numbers); // Output: [1, 5, 10, 25, 40, 100]
+    </pre>
+<!-- javascript object -->
+    <h2>JavaScript Object</h2>
+    <p>Object ใน JavaScript คือ โครงสร้างข้อมูลที่ใช้เก็บค่าหลายค่าในรูปแบบของคู่คีย์-ค่า (key-value pairs) โดยคีย์จะเป็นสตริงที่ใช้ระบุค่าต่าง ๆ ภายในออบเจ็กต์ และค่าจะเป็นข้อมูลที่เกี่ยวข้องกับคีย์นั้น ๆ</p>
+    <ul>
+        <li><strong>การสร้างออบเจ็กต์:</strong> เราสามารถสร้างออบเจ็กต์ได้โดยใช้วงเล็บปีกกา {} เช่น
+            <pre><code>let person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+    };</code></pre>
+        </li>
+        <li><strong>การเข้าถึงค่าของออบเจ็กต์:</strong> เราสามารถเข้าถึงค่าของออบเจ็กต์ได้โดยใช้จุด (.) หรือวงเล็บสี่เหลี่ยม ([]) เช่น
+            <pre><code>console.log(person.name); // Output: John
+    console.log(person["age"]); // Output: 30</code></pre>
+        </li>
+        <li><strong>การเพิ่มหรือแก้ไขค่าของออบเจ็กต์:</strong> เราสามารถเพิ่มหรือแก้ไขค่าของออบเจ็กต์ได้โดยการกำหนดค่าที่คีย์นั้น ๆ เช่น
+            <pre><code>person.country = "USA"; // เพิ่มคีย์ country
+    person.age = 31; // แก้ไขค่า age
+    console.log(person); // Output: {name: "John", age: 31, city: "New York", country: "USA"}</code></pre>
+        </li>
+        <li><strong>การลบค่าของออบเจ็กต์:</strong> เราสามารถลบค่าของออบเจ็กต์ได้โดยใช้คำสั่ง <code>delete</code> เช่น
+            <pre><code>delete person.city;
+    console.log(person); // Output: {name: "John", age: 31, country: "USA"}</code></pre>
+        </li>
+    </ul>
+<!-- javascript object method -->
+    <h2>JavaScript Object Method</h2>
+    <p>Method ใน JavaScript คือ ฟังก์ชั่นที่เป็นส่วนหนึ่งของออบเจ็กต์ ซึ่งใช้ในการดำเนินการต่าง ๆ ที่เกี่ยวข้องกับออบเจ็กต์นั้น ๆ เราสามารถสร้าง method ภายในออบเจ็กต์ได้ดังนี้:</p>
+    <pre><code>let person = {
+    firstName: "John",
+    lastName: "Doe",
+    greet: function() {
+        console.log("Hello, " + this.firstName + " " + this.lastName);
+    }
+    };</code></pre>
+    <p>ในตัวอย่างข้างต้น เราได้สร้าง method ชื่อ <code>greet</code> ที่จะแสดงข้อความทักทายโดยใช้ค่าของคีย์ <code>firstName</code> และ <code>lastName</code> ภายในออบเจ็กต์</p>
+    <p>เราสามารถเรียกใช้งาน method ได้โดยใช้จุด (.) ตามด้วยชื่อ method และวงเล็บ เช่น:</p>
+    <pre><code>person.greet(); // Output: Hello, John Doe</code></pre>
+    <p>นอกจากนี้ เรายังสามารถใช้คำสั่ง <code>this</code> ภายใน method เพื่ออ้างถึงออบเจ็กต์ปัจจุบัน ซึ่งช่วยให้เราสามารถเข้าถึงค่าของคีย์ต่าง ๆ ภายในออบเจ็กต์ได้อย่างง่ายดาย</p>
+    <p>ตัวอย่างการใช้งานออบเจ็กต์และ method:</p>
+    <pre><code>let person = {
+    firstName: "John",
+    lastName: "Doe",
+    greet: function() {
+        console.log("Hello, " + this.firstName + " " + this.lastName);
+    }
+    };
+    person.greet();
+    </code></pre>
+
 </body>
 </html>
